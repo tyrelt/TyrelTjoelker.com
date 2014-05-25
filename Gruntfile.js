@@ -25,8 +25,8 @@ module.exports = function(grunt){
         regarde: {
             all: {
                 files: [
-                    //'index.html', 
-                    'styles/*.scss'
+                    'index.html', 
+                    'styles/*.scss',
                     //'controllers/*', 
                     //'models/*', 
                     //'views/*', 
@@ -38,7 +38,7 @@ module.exports = function(grunt){
                     // 'concat', 
                     // 'uglify', 
                     'cssmin', 
-                    // 'livereload'
+                    'livereload'
                 ]
             }
         },
@@ -91,9 +91,9 @@ grunt.registerTask('default', [
     //'concat', 
     //'uglify', 
     'cssmin', 
-    //'livereload-start', 
-    //'connect', 
-    //'open', 
+    'livereload-start', 
+    'connect', 
+    'open', 
     'regarde'
     ]);
 };
