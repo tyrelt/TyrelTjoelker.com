@@ -13,16 +13,11 @@
 	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 </head>
 <body>
-
-
-	
 	<!-- header image -->
-
-<!-- header image -->
 	<div class="header">
-	<h1>TYREL TJOELKER</h1>
+		<h1>TYREL TJOELKER</h1>
 	</div>
-<!-- nav bar -->
+	<!-- nav bar -->
 	<nav>
 		<div>
 			<ul>
@@ -79,9 +74,15 @@
 		</div>
 	</div>
 	<script>
-		window_size = $(window).height();
-		$(document).ready(function() {
-			alert(window_size);
+		function setHeight() {
+			height = $(window).height();
+			navHeight = $('nav').height();
+			height = height - navHeight;
+			$('.header').css({"height": height});
+		}
+		setHeight();
+		$(window).resize(function() {
+			setHeight();
 		});
 	</script>
 </body>

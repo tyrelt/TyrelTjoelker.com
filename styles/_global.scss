@@ -87,7 +87,7 @@ p{
 }
 
 .header{
-	height: 300px;
+	height: 300px; // jQuery overrides this
 	overflow: auto;
 	background-color: $yellow;
 	
