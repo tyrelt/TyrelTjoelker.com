@@ -75,13 +75,16 @@
 	</div>
 	<script>
 		function setHeight() {
-			height = $(window).height();
+			totalHeight = $(window).height();
 			navHeight = $('nav').height();
-			height = height - navHeight;
-			if (height < 200) {
-				height = 200;
+			h1Height = $('h1').height();
+			imageHeight = totalHeight - navHeight;
+			if (imageHeight < 200) {
+				imageHeight = 200;
 			}
-			$('.header').css({"height": height});
+			topPaddingHeight = imageHeight / 2.5
+			$('.header').css({"height": imageHeight});
+			$('.header h1').css({"padding-top": topPaddingHeight});
 		}
 		setHeight();
 		$(window).resize(function() {

@@ -12,15 +12,13 @@ $yellow: rgb(250,155,30);
 
 
 //Page styling
-html {
-	// padding: 0;
-	// margin: 0;
-}
+
 body {
 	margin: 0 auto;
 	background-color: $lightGray;
 	height: auto;
-	min-height: 100%
+	min-height: 100%;
+    font-family: sans-serif;
 }
 
 
@@ -28,7 +26,7 @@ body {
 
 h1 {
 	margin: 35px 15px 35px 15px;
-	color:$blue;
+    text-align: center;
 	font-size: 32px;
 	font-weight: 700;
 }
@@ -89,9 +87,13 @@ p{
 .header{
 	height: 300px; // jQuery overrides this
 	overflow: auto;
-	background-color: $yellow;
-	
+    background: url(../images/tyrelAndPam.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 	h1{
-		padding: 15px 0 0 20px;
+		color: white;
+        font-size: 60px;
 	}
 }
