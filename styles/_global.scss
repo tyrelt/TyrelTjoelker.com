@@ -10,6 +10,39 @@ $yellow: rgb(250,155,30);
 // Fonts
 
 
+//Page styling
+html {
+	background-color: $darkGray;
+}
+body {
+	max-width: 1000px;
+	margin: 0px 6%;
+	border: 1px solid red;
+	background-color: $lightGray;
+}
+
+
+// Headers and body text
+
+h1{
+	margin-bottom: 35px;
+	color:$blue;
+	font-size: 32px;
+}
+
+h2{ 
+	margin-bottom: 25px;
+	font-size: 24px;
+}
+
+h3{ 
+	margin-bottom: 15px;
+}
+
+p{ 
+	margin-bottom: 15px;
+}
+
 
 // Useful classes
 
@@ -23,18 +56,4 @@ $yellow: rgb(250,155,30);
 
 .marginBottom50{
 	margin-bottom: 50px;
-}
-
-// Headers and body text
-
-h1{
-	margin-bottom: 15px;
-	color:$darkGray;
-
-}
-
-body {
-	font-size: 16px;
-	color: red;
-	max-width: 1200px;
 }
