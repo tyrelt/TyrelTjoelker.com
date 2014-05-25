@@ -4,6 +4,9 @@
 	<meta charset="UTF-8">
 	<title>TyrelTjoelker.com</title>
 	<link rel="stylesheet" type="text/css" href="styles/styles.css" />
+	<script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js'></script>
+	<script src="JavaScript/slider.js"></script>
+	<script src="JavaScript/sliderController.js"></script>
 </head>
 <body>
 
@@ -55,11 +58,8 @@
 			</div>
 		</div>
 	<!-- Kind words -->
-		<div class="clear">
-			<h1>Kind words</h1>
-			<div>
-				<p>Slider goes here</p>
-			</div>
+		<div class="clear" ng-app='slider' ng-init>
+			<custom-slider></custom-slider>
 		</div>
 	<!-- Connect -->
 		<div>

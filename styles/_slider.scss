@@ -1,0 +1,64 @@
+// button {
+//     font-family: 'Open Sans', helvetica;
+//     font-size: .8em;
+//     background-color: $blue;
+//     color: white;
+//     border: 0;
+//     cursor: pointer;
+//     padding: 8px 20px;
+//     min-width: 140px;
+//     margin: 0 auto;
+//     margin-bottom: 10px;
+//     &:focus, :active {
+//         outline-style: none;
+//     }
+//     &:hover {
+//         background-color: $lightBlue;
+//     }
+// }
+
+// Navigation dots
+.navBullets {
+    font-size: 80px;
+    display: inline-block;
+    color: $gray;
+    font-family: garamond; // Open Sans seems to ovalize the bullets?
+    &:hover {
+        color: $lightBlue;
+        cursor: pointer;
+    }
+    &.active {
+        color: red;
+        cursor: default;
+    }
+}
+
+// Wrapper around the dots
+.bulletsWrapper {
+    margin: 0 auto;
+    text-align: center;
+}
+
+// Wrapper around the whole slider
+.sliderWrapper {
+    width: 75%;
+    position: relative;
+}
+
+// Absolute position the slides
+.slide {
+    position: absolute;
+}
+
+// Hide the placeholder, but let it keep taking up space
+.placeholder {
+    visibility: hidden;
+}
+
+// Back and forward text links
+.controls {
+    text-align: center;
+    color: $blue;
+    cursor: pointer;
+    font-weight: bold;
+}
