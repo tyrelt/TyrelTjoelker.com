@@ -33,11 +33,11 @@ module.exports = function(grunt){
                     //'app.js'
                 ],
                 tasks: [
-                    'sass' 
+                    'sass',
                     // 'jshint',
                     // 'concat', 
                     // 'uglify', 
-                    // 'cssmin', 
+                    'cssmin', 
                     // 'livereload'
                 ]
             }
@@ -74,7 +74,7 @@ module.exports = function(grunt){
         cssmin: {
             build: {
                 src: 'styles/styles.css',
-                dest: 'grunted/styles.css'
+                dest: 'styles/styles.css'
             }
         },
         sass: {
@@ -90,7 +90,7 @@ grunt.registerTask('default', [
     //'jshint',
     //'concat', 
     //'uglify', 
-    //'cssmin', 
+    'cssmin', 
     //'livereload-start', 
     //'connect', 
     //'open', 
