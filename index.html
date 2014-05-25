@@ -79,12 +79,12 @@
 			navHeight = $('nav').height();
 			h1Height = $('h1').height();
 			imageHeight = totalHeight - navHeight;
-			if (imageHeight < 200) {
-				imageHeight = 200;
+			if (imageHeight < 300) {
+				imageHeight = 300;
 			}
 			topPaddingHeight = imageHeight / 2.5
 			$('.header').css({"height": imageHeight});
-			$('.header h1').css({"padding-top": topPaddingHeight});
+			$('.header h1').css({"margin-top": topPaddingHeight});
 		}
 		setHeight();
 		$(window).resize(function() {
