@@ -13,11 +13,14 @@ $yellow: rgb(250,155,30);
 
 //Page styling
 html {
-	// background-color: $darkGray;
+	// padding: 0;
+	// margin: 0;
 }
 body {
 	margin: 0 auto;
 	background-color: $lightGray;
+	height: auto;
+	min-height: 100%
 }
 
 
@@ -81,4 +84,14 @@ p{
 .wrap{
 	margin: 0 6%;
 	max-width: 1000px;
+}
+
+.header{
+	height: 300px;
+	overflow: auto;
+	background-color: $yellow;
+	
+	h1{
+		padding: 15px 0 0 20px;
+	}
 }
