@@ -78,6 +78,9 @@
 			height = $(window).height();
 			navHeight = $('nav').height();
 			height = height - navHeight;
+			if (height < 200) {
+				height = 200;
+			}
 			$('.header').css({"height": height});
 		}
 		setHeight();
@@ -86,4 +89,4 @@
 		});
 	</script>
 </body>
-</html>
+</html
