@@ -3,6 +3,14 @@ nav {
     display: inline-block; // Necessary for background color to work
     width: 100%;
     text-align: center;
+    
+    div{
+        max-width: 1000px;
+        margin: 0 auto;
+        border: 1px solid red;
+    }
+
+
     ul {
         li {
             list-style: none;
