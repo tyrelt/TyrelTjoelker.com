@@ -16,7 +16,6 @@ html {
 	// background-color: $darkGray;
 }
 body {
-	max-width: 1000px;
 	margin: 0 auto;
 	background-color: $lightGray;
 }
@@ -81,4 +80,5 @@ p{
 
 .wrap{
 	margin: 0 6%;
+	max-width: 1000px;
 }
