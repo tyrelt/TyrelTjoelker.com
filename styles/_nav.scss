@@ -1,6 +1,22 @@
 nav {
-    li {
-        display: inline-block;
-        // border: 1px solid red;
+    background-color: $blue;
+    display: inline-block; // Necessary for background color to work
+    width: 100%;
+    text-align: center;
+    ul {
+        li {
+            list-style: none;
+            width: 100%;
+            a {
+                color: white;
+                text-decoration: none;
+                padding: 10px 0px; // Because the width handles horizontal padding
+                min-width: 150px;
+                display: inline-block;
+                &:hover {
+                    background-color: $lightBlue;
+                }
+            }
+        }
     }
 }
