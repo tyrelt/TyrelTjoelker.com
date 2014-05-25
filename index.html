@@ -4,9 +4,13 @@
 	<meta charset="UTF-8">
 	<title>TyrelTjoelker.com</title>
 	<link rel="stylesheet" type="text/css" href="styles/styles.css" />
+	<!-- Angular -->
 	<script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js'></script>
+	<!-- JS for slider -->
 	<script src="JavaScript/slider.js"></script>
 	<script src="JavaScript/sliderController.js"></script>
+	<!-- jQuery -->
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 </head>
 <body>
 
@@ -73,5 +77,11 @@
 			<!-- this is a test -->
 		</div>
 	</div>
+	<script>
+		window_size = $(window).height();
+		$(document).ready(function() {
+			alert(window_size);
+		});
+	</script>
 </body>
 </html>
