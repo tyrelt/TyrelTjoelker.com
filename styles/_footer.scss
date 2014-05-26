@@ -1,0 +1,27 @@
+footer {
+    background-color: $purple;
+    // opacity: 0.8;
+    display: inline-block; // Necessary for background color to work
+    width: 100%;
+    text-align: center;
+    div{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    ul {
+        li {
+            list-style: none;
+            width: 100%;
+            a {
+                color: white;
+                text-decoration: none;
+                padding: 10px 0px; // Because the width handles horizontal padding
+                min-width: 150px;
+                display: inline-block;
+                &:hover {
+                    background-color: $blue;
+                }
+            }
+        }
+    }
+}
