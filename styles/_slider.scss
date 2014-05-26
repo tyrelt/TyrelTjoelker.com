@@ -28,7 +28,7 @@
         cursor: pointer;
     }
     &.active {
-        color: red;
+        color: $lightBlue;
         cursor: default;
     }
 }
@@ -41,7 +41,7 @@
 
 // Wrapper around the whole slider
 .sliderWrapper {
-    width: 75%;
+    // width: 75%;
     position: relative;
 }
 
