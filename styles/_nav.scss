@@ -1,5 +1,5 @@
 nav {
-    background-color: $grayOpaque;
+    background-color: $blueOpaque;
     // opacity: 0.8;
     display: inline-block; // Necessary for background color to work
     width: 100%;
@@ -19,7 +19,7 @@ nav {
                 min-width: 150px;
                 display: inline-block;
                 &:hover {
-                    background-color: $gray;
+                    background-color: $blue;
                 }
             }
         }

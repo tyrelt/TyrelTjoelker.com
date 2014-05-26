@@ -46,11 +46,16 @@
 		<button ng-click='setCurrent(1)'>1</button>
 		<button ng-click='setCurrent(2)'>2</button>
 		<button ng-click='setCurrent(3)'>3</button>
-		<p style="color: red;" ng-show='current == 1'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, recusandae aliquam veritatis nostrum suscipit sequi doloremque officiis totam officia aperiam eius perferendis cupiditate ipsum minima dolor perspiciatis quam debitis pariatur?</p>
+		<div ng-show='current == 1'>
+			<p class="leftColumn" style="padding: 0; margin: 0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, aliquid, quidem, eveniet vitae et animi qui incidunt doloremque odio autem natus dolore expedita ab at ipsam unde nesciunt debitis vel?</p>
+			<p class="rightColumn" style="padding: 0; margin: 0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, recusandae aliquam veritatis nostrum suscipit sequi doloremque officiis totam officia aperiam eius perferendis cupiditate ipsum minima dolor perspiciatis quam debitis pariatur?</p>
+		</div>
+
+
 		<p style="color: blue;" ng-show='current == 2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, animi maiores ullam optio perferendis explicabo unde! Modi, voluptatibus, et, sapiente, nesciunt reiciendis dolores perspiciatis vel eaque culpa eos maiores a?</p>
 		<p style="color: orange;" ng-show='current == 3'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, doloremque, blanditiis fugit tempora quaerat vitae laboriosam alias eum incidunt illo aspernatur modi eaque asperiores placeat distinctio quidem fuga iusto magni.</p>
 	</div>
-	<div class="web" ng-controller='webController'>
+	<div class="web clear" ng-controller='webController'>
 		<h2>Web design</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, deleniti, veritatis nobis consequatur vel minus molestias iure rem numquam voluptatem.</p>
 		<button ng-click='setCurrent(1)'>1</button>
@@ -104,9 +109,14 @@
 			<h3>Connect with me today:</h3>
 			<p>GO >></p>
 		</div>
-	<!-- Footer -->
+
+	</div>
+
+		<!-- Footer -->
 	<footer>
 		<div>
+			<p>&copy; 2014 Tyrel Tjoelker</p>
+			<p>Special thanks to the homie David Davidson and Pam Bauthues</p>
 			<ul>
 				<li><a href="#">About</a></li>
 				<li><a href="#">Marketing</a></li>
@@ -116,7 +126,6 @@
 			</ul>
 		</div>
 	</footer>
-	</div>
 	<script>
 		function setHeight() {
 			totalHeight = $(window).height();
