@@ -15,22 +15,24 @@
 	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 </head>
 <body>
-	<!-- header image -->
-	<div class="header">
-		<h1>TYREL TJOELKER</h1>
-	</div>
-	<!-- nav bar -->
-	<nav>
-		<div>
-			<ul>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Marketing</a></li>
-				<li><a href="#">Code</a></li>
-				<li><a href="#">Kind words</a></li>
-				<li><a href="#">Connect</a></li>
-			</ul>
+	<div class="headerBackground">
+		<!-- header image -->
+		<div class="header">
+			<h1>TYREL TJOELKER</h1>
 		</div>
-	</nav>
+		<!-- nav bar -->
+		<nav>
+			<div>
+				<ul>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Marketing</a></li>
+					<li><a href="#">Code</a></li>
+					<li><a href="#">Kind words</a></li>
+					<li><a href="#">Connect</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
 <!-- About section -->
 <div class="wrap">
 	<div>
@@ -124,7 +126,8 @@
 			if (imageHeight < 300) {
 				imageHeight = 300;
 			}
-			topPaddingHeight = imageHeight / 2.5
+			topPaddingHeight = imageHeight / 2.25
+			$('.headerBackground').css({"height": totalHeight})
 			$('.header').css({"height": imageHeight});
 			$('.header h1').css({"margin-top": topPaddingHeight});
 		}
