@@ -1,16 +1,13 @@
 nav {
-    background-color: $blue;
+    background-color: $grayOpaque;
+    // opacity: 0.8;
     display: inline-block; // Necessary for background color to work
     width: 100%;
     text-align: center;
-    
     div{
         max-width: 1000px;
         margin: 0 auto;
-        // border: 1px solid red;
     }
-
-
     ul {
         li {
             list-style: none;
@@ -22,7 +19,7 @@ nav {
                 min-width: 150px;
                 display: inline-block;
                 &:hover {
-                    background-color: $lightBlue;
+                    background-color: $gray;
                 }
             }
         }
