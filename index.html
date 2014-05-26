@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app='tyrelSite' ng-init>
 <head>
 	<meta charset="UTF-8">
 	<title>TyrelTjoelker.com</title>
@@ -7,8 +7,8 @@
 	<!-- Angular -->
 	<script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js'></script>
 	<!-- JS for slider -->
-	<script src="JavaScript/slider.js"></script>
-	<script src="JavaScript/sliderController.js"></script>
+	<script src="scripts/app.js"></script>
+	<script src="scripts/sliderController.js"></script>
 	<!-- jQuery -->
 	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 </head>
@@ -35,9 +35,13 @@
 		<h1>About Tyrel</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, architecto, beatae, perspiciatis, laborum magni facere quod iste inventore expedita odio fugit natus ab eius dicta placeat sed excepturi tenetur dolor harum voluptatibus doloremque temporar unde esse repellendus saepe ipsa in voluptas dignissimos obcaecati quae eos corrupti nulla officiis temporibus incidunt.</p>
 	</div>
-	
-	
-	
+	<!-- Start three-column stuff -->
+	<h2>Email marketing</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, voluptatum molestiae quidem quia laborum ullam eaque iure odio laudantium illo.</p>
+	<p ng-show="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, recusandae aliquam veritatis nostrum suscipit sequi doloremque officiis totam officia aperiam eius perferendis cupiditate ipsum minima dolor perspiciatis quam debitis pariatur?</p>
+	<p ng-show="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, animi maiores ullam optio perferendis explicabo unde! Modi, voluptatibus, et, sapiente, nesciunt reiciendis dolores perspiciatis vel eaque culpa eos maiores a?</p>
+	<p ng-show="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, doloremque, blanditiis fugit tempora quaerat vitae laboriosam alias eum incidunt illo aspernatur modi eaque asperiores placeat distinctio quidem fuga iusto magni.</p>
+	<!-- End three-column stuff -->
 	<!-- Two columns projects -->
 		<div class="twoColumnContainer">
 			<h1>What I&rsquo;ve worked on</h1>
@@ -61,7 +65,7 @@
 			</div>
 		</div>
 	<!-- Kind words -->
-		<div class="clear" ng-app='slider' ng-init>
+		<div class="clear">
 			<custom-slider></custom-slider>
 		</div>
 	<!-- Connect -->

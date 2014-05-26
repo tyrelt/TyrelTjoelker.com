@@ -1,4 +1,4 @@
-slider.controller('sliderController',
+tyrelSite.controller('sliderController',
     ['$scope', '$timeout',
     function ($scope, $timeout) {
         // If this were true MVC, we'd put the slider text in a model; since it's a simple demo, we'll just supply the data here
