@@ -99,3 +99,10 @@ p{
         font-size: 60px;
 	}
 }
+
+.twoColumn {
+	 -moz-column-count: 2;
+       -moz-column-gap: 20px;
+       -webkit-column-count: 2;
+       -webkit-column-gap: 20px;
+}
