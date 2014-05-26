@@ -1,9 +1,10 @@
 // Color variables
 $darkGray: rgb(60,60,60);
 $gray: rgb(90,90,90);
-$grayOpaque: rgba(60,60,60,0.8); // Must match $blue
+$grayOpaque: rgba(60,60,60,0.8); // Must match $gray
 $lightGray: rgb(230,230,230);
 $blue: rgb(0,50,60);
+$blueOpaque: rgba(0,50,60,0.8); // Must match $blue
 $lightBlue: rgb(0,100,150);
 $purple: rgb(50,20,25);
 $red: rgb(95,15,15);
@@ -90,8 +91,7 @@ p{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    opacity: .8;
-    overflow: hidden;
+     overflow: hidden;
 
 }
 .header{
@@ -101,4 +101,11 @@ p{
 		color: white;
         font-size: 60px;
 	}
+}
+
+.twoColumn {
+	 -moz-column-count: 2;
+       -moz-column-gap: 20px;
+       -webkit-column-count: 2;
+       -webkit-column-gap: 20px;
 }
