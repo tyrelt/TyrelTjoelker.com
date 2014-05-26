@@ -1,14 +1,16 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app='tyrelSite' ng-init>
 <head>
 	<meta charset="UTF-8">
 	<title>TyrelTjoelker.com</title>
 	<link rel="stylesheet" type="text/css" href="styles/styles.css" />
 	<!-- Angular -->
 	<script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js'></script>
-	<!-- JS for slider -->
-	<script src="JavaScript/slider.js"></script>
-	<script src="JavaScript/sliderController.js"></script>
+	<!-- Angular for slider -->
+	<script src="scripts/app.js"></script>
+	<script src="scripts/sliderController.js"></script>
+	<!-- Angular for displaying skills -->
+	<script src="scripts/skillControllers.js"></script>
 	<!-- jQuery -->
 	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 </head>
@@ -35,9 +37,38 @@
 		<h1>About Tyrel</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, architecto, beatae, perspiciatis, laborum magni facere quod iste inventore expedita odio fugit natus ab eius dicta placeat sed excepturi tenetur dolor harum voluptatibus doloremque temporar unde esse repellendus saepe ipsa in voluptas dignissimos obcaecati quae eos corrupti nulla officiis temporibus incidunt.</p>
 	</div>
-	
-	
-	
+	<!-- Start three-column stuff -->
+	<div class="email" ng-controller='emailController'>
+		<h2>Email marketing</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, voluptatum molestiae quidem quia laborum ullam eaque iure odio laudantium illo.</p>
+		<button ng-click='setCurrent(1)'>1</button>
+		<button ng-click='setCurrent(2)'>2</button>
+		<button ng-click='setCurrent(3)'>3</button>
+		<p style="color: red;" ng-show='current == 1'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, recusandae aliquam veritatis nostrum suscipit sequi doloremque officiis totam officia aperiam eius perferendis cupiditate ipsum minima dolor perspiciatis quam debitis pariatur?</p>
+		<p style="color: blue;" ng-show='current == 2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, animi maiores ullam optio perferendis explicabo unde! Modi, voluptatibus, et, sapiente, nesciunt reiciendis dolores perspiciatis vel eaque culpa eos maiores a?</p>
+		<p style="color: orange;" ng-show='current == 3'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, doloremque, blanditiis fugit tempora quaerat vitae laboriosam alias eum incidunt illo aspernatur modi eaque asperiores placeat distinctio quidem fuga iusto magni.</p>
+	</div>
+	<div class="web" ng-controller='webController'>
+		<h2>Web design</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, deleniti, veritatis nobis consequatur vel minus molestias iure rem numquam voluptatem.</p>
+		<button ng-click='setCurrent(1)'>1</button>
+		<button ng-click='setCurrent(2)'>2</button>
+		<button ng-click='setCurrent(3)'>3</button>
+		<p style="color: red;" ng-show='current == 1'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, dolorem, suscipit amet beatae porro modi accusantium voluptatum ut deserunt possimus laboriosam nihil voluptate id architecto laudantium! Deleniti, corporis omnis exercitationem!</p>
+		<p style="color: blue;" ng-show='current == 2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, sed, in id excepturi nulla repudiandae asperiores commodi debitis aut! Quam, iure eligendi labore fugiat nostrum repellendus cumque aspernatur aliquam dignissimos.</p>
+		<p style="color: orange;" ng-show='current == 3'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, nesciunt distinctio earum accusamus libero non eveniet nam qui pariatur maiores sequi dolorum suscipit ut aspernatur asperiores officia quo in nobis.</p>
+	</div>
+	<div class="marketing" ng-controller='marketingController'>
+		<h2>Marketing</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, deleniti, veritatis nobis consequatur vel minus molestias iure rem numquam voluptatem.</p>
+		<button ng-click='setCurrent(1)'>1</button>
+		<button ng-click='setCurrent(2)'>2</button>
+		<button ng-click='setCurrent(3)'>3</button>
+		<p style="color: red;" ng-show='current == 1'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, dolorem, suscipit amet beatae porro modi accusantium voluptatum ut deserunt possimus laboriosam nihil voluptate id architecto laudantium! Deleniti, corporis omnis exercitationem!</p>
+		<p style="color: blue;" ng-show='current == 2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, sed, in id excepturi nulla repudiandae asperiores commodi debitis aut! Quam, iure eligendi labore fugiat nostrum repellendus cumque aspernatur aliquam dignissimos.</p>
+		<p style="color: orange;" ng-show='current == 3'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, nesciunt distinctio earum accusamus libero non eveniet nam qui pariatur maiores sequi dolorum suscipit ut aspernatur asperiores officia quo in nobis.</p>
+	</div>
+	<!-- End three-column stuff -->
 	<!-- Two columns projects -->
 		<div class="twoColumnContainer">
 			<h1>What I&rsquo;ve worked on</h1>
@@ -61,7 +92,7 @@
 			</div>
 		</div>
 	<!-- Kind words -->
-		<div class="clear" ng-app='slider' ng-init>
+		<div class="clear">
 			<custom-slider></custom-slider>
 		</div>
 	<!-- Connect -->
@@ -79,12 +110,12 @@
 			navHeight = $('nav').height();
 			h1Height = $('h1').height();
 			imageHeight = totalHeight - navHeight;
-			if (imageHeight < 200) {
-				imageHeight = 200;
+			if (imageHeight < 300) {
+				imageHeight = 300;
 			}
 			topPaddingHeight = imageHeight / 2.5
 			$('.header').css({"height": imageHeight});
-			$('.header h1').css({"padding-top": topPaddingHeight});
+			$('.header h1').css({"margin-top": topPaddingHeight});
 		}
 		setHeight();
 		$(window).resize(function() {
