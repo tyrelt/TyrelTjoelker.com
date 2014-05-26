@@ -13,6 +13,8 @@
 	<script src="scripts/skillControllers.js"></script>
 	<!-- jQuery -->
 	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//use.typekit.net/cun3khp.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 <body>
 	<div class="headerBackground">
@@ -32,6 +34,7 @@
 				</ul>
 			</div>
 		</nav>
+		<div class="borderBottom"></div>
 	</div>
 <!-- About section -->
 <div class="wrap">
@@ -46,11 +49,16 @@
 		<button ng-click='setCurrent(1)'>1</button>
 		<button ng-click='setCurrent(2)'>2</button>
 		<button ng-click='setCurrent(3)'>3</button>
-		<p style="color: red;" ng-show='current == 1'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, recusandae aliquam veritatis nostrum suscipit sequi doloremque officiis totam officia aperiam eius perferendis cupiditate ipsum minima dolor perspiciatis quam debitis pariatur?</p>
+		<div ng-show='current == 1'>
+			<p class="leftColumn" style="padding: 0; margin: 0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, aliquid, quidem, eveniet vitae et animi qui incidunt doloremque odio autem natus dolore expedita ab at ipsam unde nesciunt debitis vel?</p>
+			<p class="rightColumn" style="padding: 0; margin: 0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, recusandae aliquam veritatis nostrum suscipit sequi doloremque officiis totam officia aperiam eius perferendis cupiditate ipsum minima dolor perspiciatis quam debitis pariatur?</p>
+		</div>
+
+
 		<p style="color: blue;" ng-show='current == 2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, animi maiores ullam optio perferendis explicabo unde! Modi, voluptatibus, et, sapiente, nesciunt reiciendis dolores perspiciatis vel eaque culpa eos maiores a?</p>
 		<p style="color: orange;" ng-show='current == 3'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, doloremque, blanditiis fugit tempora quaerat vitae laboriosam alias eum incidunt illo aspernatur modi eaque asperiores placeat distinctio quidem fuga iusto magni.</p>
 	</div>
-	<div class="web" ng-controller='webController'>
+	<div class="web clear" ng-controller='webController'>
 		<h2>Web design</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, deleniti, veritatis nobis consequatur vel minus molestias iure rem numquam voluptatem.</p>
 		<button ng-click='setCurrent(1)'>1</button>
@@ -66,13 +74,13 @@
 		<button ng-click='setCurrent(1)'>1</button>
 		<button ng-click='setCurrent(2)'>2</button>
 		<button ng-click='setCurrent(3)'>3</button>
-		<p style="color: red;" ng-show='current == 1'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, dolorem, suscipit amet beatae porro modi accusantium voluptatum ut deserunt possimus laboriosam nihil voluptate id architecto laudantium! Deleniti, corporis omnis exercitationem!</p>
+		<p style="color: red;"  ng-show='current == 1'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, dolorem, suscipit amet beatae porro modi accusantium voluptatum ut deserunt possimus laboriosam nihil voluptate id architecto laudantium! Deleniti, corporis omnis exercitationem!</p>
 		<p style="color: blue;" ng-show='current == 2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, sed, in id excepturi nulla repudiandae asperiores commodi debitis aut! Quam, iure eligendi labore fugiat nostrum repellendus cumque aspernatur aliquam dignissimos.</p>
 		<p style="color: orange;" ng-show='current == 3'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, nesciunt distinctio earum accusamus libero non eveniet nam qui pariatur maiores sequi dolorum suscipit ut aspernatur asperiores officia quo in nobis.</p>
 	</div>
 	<!-- End three-column stuff -->
 	<!-- Two columns projects -->
-		<div class="twoColumnContainer">
+		<!-- <div class="twoColumnContainer">
 			<h1>What I&rsquo;ve worked on</h1>
 			<div class="leftColumn">
 				<h2>Project one</h2>
@@ -92,7 +100,7 @@
 
 
 			</div>
-		</div>
+		</div> -->
 	<!-- Kind words -->
 		<div class="clear">
 			<custom-slider></custom-slider>
@@ -103,15 +111,31 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, odit, vitae, ratione, repellendus voluptas dignissimos facilis sit dolore veniam maxime commodi inventore numquam at iste ad debitis architecto velit dicta!</p>
 			<h3>Connect with me today:</h3>
 			<p>GO >></p>
-			<!-- this is a test -->
 		</div>
+
 	</div>
+
+		<!-- Footer -->
+	<footer>
+		<div>
+			<p>&copy; 2014 Tyrel Tjoelker</p>
+			<p>Special thanks to the homie David Davidson and Pam Bauthues</p>
+			<ul>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Marketing</a></li>
+				<li><a href="#">Code</a></li>
+				<li><a href="#">Kind words</a></li>
+				<li><a href="#">Connect</a></li>
+			</ul>
+		</div>
+	</footer>
 	<script>
 		function setHeight() {
 			totalHeight = $(window).height();
 			navHeight = $('nav').height();
 			h1Height = $('h1').height();
-			imageHeight = totalHeight - navHeight;
+			borderHeight = $('.borderBottom').height();
+			imageHeight = totalHeight - (navHeight + borderHeight);
 			if (imageHeight < 300) {
 				imageHeight = 300;
 			}

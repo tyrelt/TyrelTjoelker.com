@@ -94,8 +94,8 @@ p{
 
 }
 .header{
-	height: 300px; // jQuery overrides this
-	overflow: auto;
+	// height: 300px; // jQuery overrides this
+	overflow: hidden;
 	h1{
 		color: white;
         font-size: 60px;
