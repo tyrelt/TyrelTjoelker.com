@@ -101,6 +101,7 @@ p{
 		color: white;
         font-size: 60px;
         font-family: futura;
+        font-size: 4.5em;
 	}
 }
 
@@ -109,4 +110,14 @@ p{
        -moz-column-gap: 20px;
        -webkit-column-count: 2;
        -webkit-column-gap: 20px;
+}
+
+div.email{
+	div{
+		margin: 20px 0 px;
+	}
+	img{
+		margin-bottom: 30px;
+		display: inline-block;
+	}
 }
