@@ -6,8 +6,10 @@ nav {
     text-align: center;
     div{
         max-width: 1000px;
-        margin: 0 auto;
+        // margin: 0 auto;
         display: inline-block;
+        // border: 1px solid red;
+
     }
     ul {
         li {
@@ -16,7 +18,7 @@ nav {
             a {
                 color: white;
                 text-decoration: none;
-                padding: 10px 0px; // Because the width handles horizontal padding
+                padding: 35px 0px 10px 0px; // Because the width handles horizontal padding
                 min-width: 150px;
                 display: inline-block;
                 &:hover {

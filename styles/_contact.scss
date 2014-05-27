@@ -1,0 +1,19 @@
+div.contact{
+	text-align: center;
+	background-color: $lightBlue;
+	color: white;
+	width: 100%;
+	overflow: hidden;
+
+	ul{
+		li{
+			display: inline-block;
+
+		}
+	}
+
+	p{
+		margin: 5px 0;
+		
+	}
+}
