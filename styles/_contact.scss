@@ -16,8 +16,7 @@ div.contact{
 	
 	          		&:hover{
                		cursor: pointer;
-               		background-color: white;
-               		background-width: 40px;
+               		
             	}
 			}
 		}
@@ -25,4 +24,12 @@ div.contact{
 	p{
 		margin: 5px 0;
 	}
+}
+
+.circle {
+	border-radius: 50%; 
+	height: 98px;
+	width:98px;
+	background-color: white;
+	position: relative; top: 111px; left: 12px;
 }
