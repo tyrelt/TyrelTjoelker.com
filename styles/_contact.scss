@@ -8,12 +8,21 @@ div.contact{
 	ul{
 		li{
 			display: inline-block;
-
+			 img {
+            	width: 120px;
+            	border-radius: 60px;
+				-webkit-border-radius: 60px;
+				-moz-border-radius: 60px;
+	
+	          		&:hover{
+               		cursor: pointer;
+               		background-color: white;
+               		background-width: 40px;
+            	}
+			}
 		}
 	}
-
 	p{
 		margin: 5px 0;
-		
 	}
 }
