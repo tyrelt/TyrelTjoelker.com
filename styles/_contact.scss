@@ -1,35 +1,50 @@
-div.contact{
+div.contact {
 	text-align: center;
 	background-color: $lightBlue;
 	color: white;
 	width: 100%;
 	overflow: hidden;
 
-	ul{
-		li{
-			display: inline-block;
-			 img {
-            	width: 120px;
-            	border-radius: 60px;
-				-webkit-border-radius: 60px;
-				-moz-border-radius: 60px;
-	
-	          		&:hover{
-               		cursor: pointer;
-               		
-            	}
-			}
-		}
-	}
-	p{
-		margin: 5px 0;
-	}
+	// ul {
+	// 	li {
+	// 		display: inline-block;
+ //    		img {
+ //            	width: 120px;
+ //            	border-radius: 60px;
+ //    			-webkit-border-radius: 60px;
+ //    			-moz-border-radius: 60px;
+ //          		&:hover {
+ //               		cursor: pointer;
+ //               		// background-color: white;
+ //               		background-width: 40px;
+ //            	}
+	// 		}
+	// 	}
+	// }
+	// p{
+	// 	margin: 5px 0;
+	// }
 }
+.contact{
+    li {
+        display: inline-block; // "floats" the icons
+        .whiteCircleHover {
+            border-radius: 100px; // intentionally smaller than the img width
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            position: relative; // So we can absolute position the image on top
+            margin: 15px; // Just for regular old spacing
+            img {
+                position: absolute;
+                left: -15px; // No elegant argument for this: it's just what works
+                top: -15px;
+            }
+            &:hover {
+                background-color: white;
+                cursor: pointer;
+            }
+        }
+    }
 
-.circle {
-	border-radius: 50%; 
-	height: 98px;
-	width:98px;
-	background-color: white;
-	position: relative; top: 111px; left: 12px;
 }
