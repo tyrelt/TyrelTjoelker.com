@@ -30,6 +30,7 @@ body {
 
 h1 {
 	// margin: 35px 15px 35px 15px;
+	font-family: sans-serif;
     text-align: center;
 	font-size: 46px;
 	font-weight: 700;
@@ -47,8 +48,6 @@ h3{
 
 p{ 
 	font-size: 22px;
-	font-weight: 200;
-	line-height: 32px;
 }
 
 
@@ -69,12 +68,26 @@ p{
 
 .leftColumn{
 	float: left;
-	width: 50%;	
+	width: 30%;	
+	min-height: 70px;
+	text-align: right;
+	border-right: 2px solid $yellow;
+	ul{
+		li{
+			margin-right: 10px;
+			font-size: 22px;
+		}
+	}
+	
 }
 
 .rightColumn{
 	float: right;
-	width: 50%;
+	width: 65%;
+	p{
+		margin: 0;
+		padding: 0;
+	}
 }
 
 .twoColumnContainer{
@@ -90,7 +103,8 @@ p{
 	max-width: 1000px;
 }
 .headerBackground {
-    background: url(../images/tyrelAndPam.jpg) no-repeat center center fixed;
+    // background: url(../images/tyrelAndPam.jpg) no-repeat center center fixed;
+    background-color: $purple;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -102,10 +116,8 @@ p{
 	// height: 300px; // jQuery overrides this
 	overflow: hidden;
 	h1{
-		color: white;
-        font-size: 60px;
-        font-family: futura;
-        font-size: 4.5em;
+		color: $lightGray;
+        font-size: 100px;
 	}
 }
 
@@ -116,7 +128,7 @@ p{
        -webkit-column-gap: 20px;
 }
 
-div.email{
+.email{
 	div{
 		margin: 20px 0 px;
 	}
@@ -127,11 +139,32 @@ div.email{
 }
 
 .projectImages{
-	img{
-		width:33%;
+	ul{
+		li{
+		width:30%;
+		margin:0 1.20%;
 		float:left;
+		background-image: url(../images/TT_copy.png);
+		&:hover{
+          cursor: pointer;
+          background-image: url(../images/TT_copy_colorized.png);
+		}
+		}
+	}	
 		// border-radius: 110px;
 		// width: 220px;
 		// height: 220px;
-	}
+	
+}
+
+.padding30 {
+	padding:30px 0;
+}
+
+
+.padding50{
+	padding:50px 0;
+}
+.padding70 {
+	padding:70px 0;
 }

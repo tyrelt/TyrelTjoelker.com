@@ -27,7 +27,7 @@
 			<div>
 				<ul>
 					<li><a href="#">About</a></li>
-					<li><a href="#">Projects and skills</a></li>
+					<li><a href="#">y work</a></li>
 					<li><a href="#">Kind words</a></li>
 					<li><a href="#">Connect</a></li>
 				</ul>
@@ -37,41 +37,62 @@
 	</div>
 <!-- About section -->
 <div class="wrap">
-	<div>
+	<div class="padding50">
 		<h1>About Tyrel</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, architecto, beatae, perspiciatis, laborum magni facere quod iste inventore expedita odio fugit natus ab eius dicta placeat sed excepturi tenetur dolor harum voluptatibus doloremque temporar unde esse repellendus saepe ipsa in voluptas dignissimos obcaecati quae eos corrupti nulla officiis temporibus incidunt.</p>
-			<a href="">
-				<button type="button" class="primaryCTA">Connect with me</button>
-</a>
+		<a href="">
+			<button type="button" class="primaryCTA">Connect with me</button>
+		</a>
 	</div>
 	
 	<!-- Start three-column stuff -->
-	<div class="email" ng-controller='emailController'>
+	<div class="email padding50" ng-controller='emailController'>
 		<h2>Email marketing</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, voluptatum molestiae quidem quia laborum ullam eaque iure odio laudantium illo.</p>
 		<div class="projectImages">
-			<img src="images/TT_copy.jpg" ng-click='setCurrent(1)'/>
-			<img src="images/TT_copy.jpg" ng-click='setCurrent(2)'/>
-			<img src="images/TT_copy.jpg" ng-click='setCurrent(3)'/>
+		<ul>
+			<li><img src="images/TT_copy.jpg" ng-click='setCurrent(1)'/></li>
+			<li><img src="images/TT_copy.jpg" ng-click='setCurrent(2)'/></li>
+			<li><img src="images/TT_copy.jpg" ng-click='setCurrent(3)'/></li>
+		</ul>
+			
 		</div>
 
 		<div ng-show='current == 1'>
 		
-			<p class="leftColumn" style="padding: 0; margin: 0; color:red;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, aliquid, quidem, eveniet vitae et animi qui incidunt doloremque odio autem natus dolore expedita ab at ipsam unde nesciunt debitis vel?</p>
-			<p class="rightColumn" style="padding: 0; margin: 0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, recusandae aliquam veritatis nostrum suscipit sequi doloremque officiis totam officia aperiam eius perferendis cupiditate ipsum minima dolor perspiciatis quam debitis pariatur?</p>
+			<div class="leftColumn" style="color:red;"><ul>
+				<li>Logos Bible Software</li>
+				<li>Bellingham, WA 98225</li>
+				<li>June 2013&ndash;present</li>
+			</ul></div>
+			<div class="rightColumn"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, recusandae aliquam veritatis nostrum suscipit sequi doloremque officiis totam officia aperiam eius perferendis cupiditate ipsum minima dolor perspiciatis quam debitis pariatur?</p></div>
 		</div>
 
 		<div ng-show='current == 2'>
-			<p class="leftColumn" style="padding: 0; margin: 0; color:purple;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, aliquid, quidem, eveniet vitae et animi qui incidunt doloremque odio autem natus dolore expedita ab at ipsam unde nesciunt debitis vel?</p>
-			<p class="rightColumn" style="padding: 0; margin: 0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, recusandae aliquam veritatis nostrum suscipit sequi doloremque officiis totam officia aperiam eius perferendis cupiditate ipsum minima dolor perspiciatis quam debitis pariatur?</p>
+			<div class="leftColumn" style="color:purple;"><ul>
+				<li>Logos Bible Software</li>
+				<li>Bellingham, WA 98225</li>
+				<li>June 2013&ndash;present</li>
+			</ul></div>
+
+			<div class="rightColumn"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, recusandae aliquam veritatis nostrum suscipit sequi doloremque officiis totam officia aperiam eius perferendis cupiditate ipsum minima dolor perspiciatis quam debitis pariatur?</p></div>
 		</div>
 
 		<div ng-show='current == 3'>
-			<p class="leftColumn" style="padding: 0; margin: 0; color:green;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, aliquid, quidem, eveniet vitae et animi qui incidunt doloremque odio autem natus dolore expedita ab at ipsam unde nesciunt debitis vel?</p>
-			<p class="rightColumn" style="padding: 0; margin: 0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, recusandae aliquam veritatis nostrum suscipit sequi doloremque officiis totam officia aperiam eius perferendis cupiditate ipsum minima dolor perspiciatis quam debitis pariatur?</p>
+			<div class="leftColumn" style="color:green;">
+				<ul>
+					<li>Logos Bible Software</li>
+					<li>Bellingham, WA 98225</li>
+					<li>June 2013&ndash;present</li>
+				</ul>
+			</div>
+
+			<div class="rightColumn">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, recusandae aliquam veritatis nostrum suscipit sequi doloremque officiis totam officia aperiam eius perferendis cupiditate ipsum minima dolor perspiciatis quam debitis pariatur?</p>
+			</div>
 		</div>
 	</div>
-
+<!-- 
 	<div class="web clear" ng-controller='webController'>
 		<h2>Web design</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, deleniti, veritatis nobis consequatur vel minus molestias iure rem numquam voluptatem.</p>
@@ -91,32 +112,11 @@
 		<p style="color: red;"  ng-show='current == 1'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, dolorem, suscipit amet beatae porro modi accusantium voluptatum ut deserunt possimus laboriosam nihil voluptate id architecto laudantium! Deleniti, corporis omnis exercitationem!</p>
 		<p style="color: blue;" ng-show='current == 2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, sed, in id excepturi nulla repudiandae asperiores commodi debitis aut! Quam, iure eligendi labore fugiat nostrum repellendus cumque aspernatur aliquam dignissimos.</p>
 		<p style="color: orange;" ng-show='current == 3'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, nesciunt distinctio earum accusamus libero non eveniet nam qui pariatur maiores sequi dolorum suscipit ut aspernatur asperiores officia quo in nobis.</p>
-	</div>
+	</div> -->
 	<!-- End three-column stuff -->
-	<!-- Two columns projects -->
-		<!-- <div class="twoColumnContainer">
-			<h1>What I&rsquo;ve worked on</h1>
-			<div class="leftColumn">
-				<h2>Project one</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, deserunt similique voluptatum perferendis eos? Harum, molestias, doloribus iste quam facilis nemo architecto! Unde, cupiditate, beatae aspernatur ipsam magni porro corporis.</p>
-
-				<h2>Project two</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, deserunt similique voluptatum perferendis eos? Harum, molestias, doloribus iste quam facilis nemo architecto! Unde, cupiditate, beatae aspernatur ipsam magni porro corporis.</p>
-
-
-			</div>
-			<div class="rightColumn">
-				<h2>Project three</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, deserunt similique voluptatum perferendis eos? Harum, molestias, doloribus iste quam facilis nemo architecto! Unde, cupiditate, beatae aspernatur ipsam magni porro corporis.</p>
-
-				<h2>Project four</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, est.</p>
-
-
-			</div>
-		</div> -->
+	
 	<!-- Kind words -->
-		<div class="clear">
+		<div class="clear padding50">
 			<custom-slider></custom-slider>
 		</div>
 	<!-- Connect -->
