@@ -27,15 +27,15 @@ body {
 // Headers and body text
 
 h1 {
-	margin: 35px 15px 35px 15px;
+	// margin: 35px 15px 35px 15px;
     text-align: center;
-	font-size: 32px;
+	font-size: 46px;
 	font-weight: 700;
 }
 
 h2{ 
-	margin: 0 15px 25px 15px;
-	font-size: 24px;
+	// margin: 0 15px 25px 15px;
+	font-size: 36px;
 	font-weight: 600;
 }
 
@@ -44,7 +44,9 @@ h3{
 }
 
 p{ 
-	margin: 0 15px 35px 15px;
+	font-size: 22px;
+	font-weight: 200;
+	line-height: 32px;
 }
 
 
@@ -124,6 +126,10 @@ div.email{
 
 .projectImages{
 	img{
-		border-radius: 50px;
+		width:33%;
+		float:left;
+		// border-radius: 110px;
+		// width: 220px;
+		// height: 220px;
 	}
 }
