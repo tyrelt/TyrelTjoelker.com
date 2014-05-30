@@ -117,3 +117,31 @@ p{
 .padding70 {
 	padding:70px 0;
 }
+
+// buttons
+
+.primaryCTA{
+	width: 200px;
+	height: 50px;
+	background-color: $lightGray;
+	border-radius: 45px;
+	color: black;
+	border: 3px solid black;
+	font-size: 18px;
+	font-weight: 300px;
+
+	&:focus{
+		outline: 0;
+	}
+	&:hover{
+		cursor:pointer;
+		background-color: $darkGray;
+		color: white;
+	}
+}
+
+.centeredCTA {
+	margin: 0 auto;
+	text-align: center;
+	display: block;
+}

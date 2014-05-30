@@ -27,7 +27,7 @@
 			<div>
 				<ul>
 					<li><a href="#">About</a></li>
-					<li><a href="#">y work</a></li>
+					<li><a href="#">Projects and skills</a></li>
 					<li><a href="#">Kind words</a></li>
 					<li><a href="#">Connect</a></li>
 				</ul>
@@ -40,9 +40,14 @@
 	<div class="padding50">
 		<h1>About Tyrel</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, architecto, beatae, perspiciatis, laborum magni facere quod iste inventore expedita odio fugit natus ab eius dicta placeat sed excepturi tenetur dolor harum voluptatibus doloremque temporar unde esse repellendus saepe ipsa in voluptas dignissimos obcaecati quae eos corrupti nulla officiis temporibus incidunt.</p>
-		<a href="">
-			<button type="button" class="primaryCTA">Connect with me</button>
-		</a>
+		
+		<div class="centeredCTA">
+			<a href="">
+				<button type="button" class="primaryCTA">Connect with me</button>
+			</a>
+		</div>
+
+
 	</div>
 	
 	<!-- Start three-column stuff -->
@@ -97,26 +102,109 @@
 			</div>
 		</div>
 	</div>
-<!-- 
-	<div class="web clear" ng-controller='webController'>
-		<h2>Web design</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, deleniti, veritatis nobis consequatur vel minus molestias iure rem numquam voluptatem.</p>
-		<button ng-click='setCurrent(1)'>1</button>
-		<button ng-click='setCurrent(2)'>2</button>
-		<button ng-click='setCurrent(3)'>3</button>
-		<p style="color: red;" ng-show='current == 1'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, dolorem, suscipit amet beatae porro modi accusantium voluptatum ut deserunt possimus laboriosam nihil voluptate id architecto laudantium! Deleniti, corporis omnis exercitationem!</p>
-		<p style="color: blue;" ng-show='current == 2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, sed, in id excepturi nulla repudiandae asperiores commodi debitis aut! Quam, iure eligendi labore fugiat nostrum repellendus cumque aspernatur aliquam dignissimos.</p>
-		<p style="color: orange;" ng-show='current == 3'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, nesciunt distinctio earum accusamus libero non eveniet nam qui pariatur maiores sequi dolorum suscipit ut aspernatur asperiores officia quo in nobis.</p>
+
+	<!-- <div class="web clear" ng-controller='webController'>
+		<h1>Code</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, voluptatum molestiae quidem quia laborum ullam eaque iure odio laudantium illo.</p>
+		<div class="projectImages">
+
+				<ul>
+					<li><a href=""><button class="emailCTA workImage" ng-click='setCurrent(1)'>Email marketing</button></a></li>
+					<li><a href=""><button type="button" class="copyCTA workImage" ng-click='setCurrent(2)'>Copywriting</button></a></li>
+					<li><a href=""><button type="button" class="educationCTA workImage" ng-click='setCurrent(3)'>Education</button></a></li>
+				</ul>
+			
+		</div>
+	<div ng-show='current == 1'>
+			<div class="leftColumn" style="color:red;">
+				<ul>
+					<li>Logos Bible Software</li>
+					<li>Bellingham, WA 98225</li>
+					<li>June 2013&ndash;present</li>
+				</ul>
+			</div>
+			
+			<div class="rightColumn">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, recusandae aliquam veritatis nostrum suscipit sequi doloremque officiis totam officia aperiam eius perferendis cupiditate ipsum minima dolor perspiciatis quam debitis pariatur?</p>
+			</div>
+		</div>
+
+		<div ng-show='current == 2'>
+			<div class="leftColumn" style="color:purple;"><ul>
+				<li>Logos Bible Software</li>
+				<li>Bellingham, WA 98225</li>
+				<li>June 2013&ndash;present</li>
+			</ul></div>
+
+			<div class="rightColumn"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, recusandae aliquam veritatis nostrum suscipit sequi doloremque officiis totam officia aperiam eius perferendis cupiditate ipsum minima dolor perspiciatis quam debitis pariatur?</p></div>
+		</div>
+
+		<div ng-show='current == 3'>
+			<div class="leftColumn" style="color:green;">
+				<ul>
+					<li>Logos Bible Software</li>
+					<li>Bellingham, WA 98225</li>
+					<li>June 2013&ndash;present</li>
+				</ul>
+			</div>
+
+			<div class="rightColumn">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, recusandae aliquam veritatis nostrum suscipit sequi doloremque officiis totam officia aperiam eius perferendis cupiditate ipsum minima dolor perspiciatis quam debitis pariatur?</p>
+			</div>
+		</div>
 	</div>
-	<div class="marketing" ng-controller='marketingController'>
-		<h2>Marketing</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, deleniti, veritatis nobis consequatur vel minus molestias iure rem numquam voluptatem.</p>
-		<button ng-click='setCurrent(1)'>1</button>
-		<button ng-click='setCurrent(2)'>2</button>
-		<button ng-click='setCurrent(3)'>3</button>
-		<p style="color: red;"  ng-show='current == 1'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, dolorem, suscipit amet beatae porro modi accusantium voluptatum ut deserunt possimus laboriosam nihil voluptate id architecto laudantium! Deleniti, corporis omnis exercitationem!</p>
-		<p style="color: blue;" ng-show='current == 2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, sed, in id excepturi nulla repudiandae asperiores commodi debitis aut! Quam, iure eligendi labore fugiat nostrum repellendus cumque aspernatur aliquam dignissimos.</p>
-		<p style="color: orange;" ng-show='current == 3'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, nesciunt distinctio earum accusamus libero non eveniet nam qui pariatur maiores sequi dolorum suscipit ut aspernatur asperiores officia quo in nobis.</p>
+
+
+
+	<div class="web clear marketing" ng-controller='marketingController'>
+		<h1>Code</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, voluptatum molestiae quidem quia laborum ullam eaque iure odio laudantium illo.</p>
+		<div class="projectImages">
+
+				<ul>
+					<li><a href=""><button class="emailCTA workImage" ng-click='setCurrent(1)'>Email marketing</button></a></li>
+					<li><a href=""><button type="button" class="copyCTA workImage" ng-click='setCurrent(2)'>Copywriting</button></a></li>
+					<li><a href=""><button type="button" class="educationCTA workImage" ng-click='setCurrent(3)'>Education</button></a></li>
+				</ul>
+			
+		</div>
+	<div ng-show='current == 1'>
+			<div class="leftColumn" style="color:red;">
+				<ul>
+					<li>Logos Bible Software</li>
+					<li>Bellingham, WA 98225</li>
+					<li>June 2013&ndash;present</li>
+				</ul>
+			</div>
+			
+			<div class="rightColumn">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, recusandae aliquam veritatis nostrum suscipit sequi doloremque officiis totam officia aperiam eius perferendis cupiditate ipsum minima dolor perspiciatis quam debitis pariatur?</p>
+			</div>
+		</div>
+
+		<div ng-show='current == 2'>
+			<div class="leftColumn" style="color:purple;"><ul>
+				<li>Logos Bible Software</li>
+				<li>Bellingham, WA 98225</li>
+				<li>June 2013&ndash;present</li>
+			</ul></div>
+
+			<div class="rightColumn"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, recusandae aliquam veritatis nostrum suscipit sequi doloremque officiis totam officia aperiam eius perferendis cupiditate ipsum minima dolor perspiciatis quam debitis pariatur?</p></div>
+		</div>
+
+		<div ng-show='current == 3'>
+			<div class="leftColumn" style="color:green;">
+				<ul>
+					<li>Logos Bible Software</li>
+					<li>Bellingham, WA 98225</li>
+					<li>June 2013&ndash;present</li>
+				</ul>
+			</div>
+
+			<div class="rightColumn">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, recusandae aliquam veritatis nostrum suscipit sequi doloremque officiis totam officia aperiam eius perferendis cupiditate ipsum minima dolor perspiciatis quam debitis pariatur?</p>
+			</div>
+		</div>
 	</div> -->
 	<!-- End three-column stuff -->
 	
