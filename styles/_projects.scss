@@ -1,0 +1,79 @@
+// description styles
+
+.leftColumn{
+	float: left;
+	width: 30%;	
+	min-height: 70px;
+	text-align: right;
+	border-right: 2px solid $yellow;
+	ul{
+		li{
+			margin-right: 10px;
+			font-size: 22px;
+		}
+	}
+	
+}
+
+.rightColumn{
+	float: right;
+	width: 65%;
+	p{
+		margin: 0;
+		padding: 0;
+	}
+}
+
+
+
+// button styles
+
+.projectImages{
+	margin: 40px;
+	ul{
+		text-align: center;
+		li{
+			display: inline-block;
+			margin: 0 2%;
+		}
+	}
+}
+
+
+.workImage{
+	width: 260px;
+	height: 180px;
+	border-radius: 45px;
+	color: $lightGray;
+	border: 0;
+	font-size: 24px;
+	font-weight: 300px;
+	&:focus{
+		outline: 0;
+	}
+	&:hover{
+		cursor:pointer;
+	}
+}
+
+
+.emailCTA{
+	background-image: url(../images/TT_strategy.jpg);
+	&:hover {
+		background-image: url(../images/TT_strategy_colorized.jpg);
+	}
+}
+
+.copyCTA{
+	background-image: url(../images/TT_copy.jpg);
+	&:hover {
+		background-image: url(../images/TT_copy_colorized.jpg);
+	}
+}
+
+.educationCTA{
+	background-image: url(../images/TT_education.jpg);
+	&:hover {
+		background-image: url(../images/TT_education_colorized.jpg);
+	}
+}
