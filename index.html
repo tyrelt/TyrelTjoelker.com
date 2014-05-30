@@ -47,25 +47,30 @@
 	
 	<!-- Start three-column stuff -->
 	<div class="email padding50" ng-controller='emailController'>
-		<h2>Email marketing</h2>
+		<h1>Marketing</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, voluptatum molestiae quidem quia laborum ullam eaque iure odio laudantium illo.</p>
 		<div class="projectImages">
-		<ul>
-			<li><img src="images/TT_copy.jpg" ng-click='setCurrent(1)'/></li>
-			<li><img src="images/TT_copy.jpg" ng-click='setCurrent(2)'/></li>
-			<li><img src="images/TT_copy.jpg" ng-click='setCurrent(3)'/></li>
-		</ul>
+
+				<ul>
+					<li><a href=""><button class="emailCTA workImage" ng-click='setCurrent(1)'>Email marketing</button></a></li>
+					<li><a href=""><button type="button" class="copyCTA workImage" ng-click='setCurrent(2)'>Copywriting</button></a></li>
+					<li><a href=""><button type="button" class="educationCTA workImage" ng-click='setCurrent(3)'>Education</button></a></li>
+				</ul>
 			
 		</div>
 
 		<div ng-show='current == 1'>
-		
-			<div class="leftColumn" style="color:red;"><ul>
-				<li>Logos Bible Software</li>
-				<li>Bellingham, WA 98225</li>
-				<li>June 2013&ndash;present</li>
-			</ul></div>
-			<div class="rightColumn"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, recusandae aliquam veritatis nostrum suscipit sequi doloremque officiis totam officia aperiam eius perferendis cupiditate ipsum minima dolor perspiciatis quam debitis pariatur?</p></div>
+			<div class="leftColumn" style="color:red;">
+				<ul>
+					<li>Logos Bible Software</li>
+					<li>Bellingham, WA 98225</li>
+					<li>June 2013&ndash;present</li>
+				</ul>
+			</div>
+			
+			<div class="rightColumn">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, recusandae aliquam veritatis nostrum suscipit sequi doloremque officiis totam officia aperiam eius perferendis cupiditate ipsum minima dolor perspiciatis quam debitis pariatur?</p>
+			</div>
 		</div>
 
 		<div ng-show='current == 2'>

@@ -65,38 +65,14 @@ p{
 	margin-bottom: 50px;
 }
 
-
-.leftColumn{
-	float: left;
-	width: 30%;	
-	min-height: 70px;
-	text-align: right;
-	border-right: 2px solid $yellow;
-	ul{
-		li{
-			margin-right: 10px;
-			font-size: 22px;
-		}
-	}
-	
-}
-
-.rightColumn{
-	float: right;
-	width: 65%;
-	p{
-		margin: 0;
-		padding: 0;
-	}
+.clear{ 
+	clear: both;
 }
 
 .twoColumnContainer{
 	width: 100%;
 }
 
-.clear{ 
-	clear: both;
-}
 
 .wrap{
 	margin: 0 6%;
@@ -128,34 +104,7 @@ p{
        -webkit-column-gap: 20px;
 }
 
-.email{
-	div{
-		margin: 20px 0 px;
-	}
-	img{
-		margin-bottom: 30px;
-		display: inline-block;
-	}
-}
 
-.projectImages{
-	ul{
-		li{
-		width:30%;
-		margin:0 1.20%;
-		float:left;
-		background-image: url(../images/TT_copy.png);
-		&:hover{
-          cursor: pointer;
-          background-image: url(../images/TT_copy_colorized.png);
-		}
-		}
-	}	
-		// border-radius: 110px;
-		// width: 220px;
-		// height: 220px;
-	
-}
 
 .padding30 {
 	padding:30px 0;
