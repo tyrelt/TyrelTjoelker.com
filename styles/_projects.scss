@@ -38,34 +38,39 @@
 		}
 	}
 }
+
+.currentBackground {
+		background-color: $darkGray !important;
+	color: white !important;
+}
 .ttCurrent{
-	background-image: url(../images/TT_TTsite_colorized.jpg) !important;
-	border: 7px solid $purple !important;
+	// background-image: url(../images/TT_TTsite_colorized.jpg) !important;
+	// border: 7px solid $purple !important;
 }
 
 .ssCurrent{
-	background-image: url(../images/TT_SublimeScript_colorized.jpg) !important;
-	border: 7px solid $purple !important;
+	// background-image: url(../images/TT_SublimeScript_colorized.jpg) !important;
+	// border: 7px solid $purple !important;
 }
 
 .githubCurrent{
-	background-image: url(../images/TT_Github_colorized.jpg) !important;
-	border: 7px solid $purple !important;
+	// background-image: url(../images/TT_Github_colorized.jpg) !important;
+	// border: 7px solid $purple !important;
 }
 .emailCurrent {
-	background-image: url(../images/TT_strategy_colorized.jpg) !important;
-	border: 7px solid $purple !important;
+	// background-image: url(../images/TT_strategy_colorized.jpg) !important;
+	// border: 7px solid $purple !important;
 }
 
 .copyCurrent {
-	background-image: url(../images/TT_copy_colorized.jpg) !important;
-		border: 7px solid $purple !important;
+	// background-image: url(../images/TT_copy_colorized.jpg) !important;
+	// 	border: 7px solid $purple !important;
 
 }
 
 .educationCurrent{
-	background-image: url(../images/TT_education_colorized.jpg) !important;
-	border: 7px solid $purple !important;
+	// background-image: url(../images/TT_education_colorized.jpg) !important;
+	// border: 7px solid $purple !important;
 
 }
 
@@ -73,61 +78,63 @@
 	width: 200px;
 	height: 200px;
 	border-radius: 100px;
-	color: $lightGray;
+	color: $darkGray;
+	background-color: white;
 	border: 0;
 	font-size: 24px;
 	font-weight: 300px;
-	border: 7px solid white;
-	// border: 7px solid $transparent;
+	border: 7px solid $darkGray;
 	&:focus{
 		outline: 0;
 	}
 	&:hover{
 		cursor:pointer;
-		border: 7px solid $purple;
+		background-color: $darkGray;
+		// border: 7px solid $darkGray;
+		color: white;
 
 	}
 }
 
 
-.emailCTA{
-	background-image: url(../images/TT_strategy.jpg);
-	&:hover {
-		background-image: url(../images/TT_strategy_colorized.jpg);
-	}
-}
+// .emailCTA{
+// 	background-image: url(../images/TT_strategy.jpg);
+// 	&:hover {
+// 		background-image: url(../images/TT_strategy_colorized.jpg);
+// 	}
+// }
 
-.copyCTA{
-	background-image: url(../images/TT_copy.jpg);
-	&:hover {
-		background-image: url(../images/TT_copy_colorized.jpg);
-	}
-}
+// .copyCTA{
+// 	background-image: url(../images/TT_copy.jpg);
+// 	&:hover {
+// 		background-image: url(../images/TT_copy_colorized.jpg);
+// 	}
+// }
 
-.educationCTA{
-	background-image: url(../images/TT_education.jpg);
-	&:hover {
-		background-image: url(../images/TT_education_colorized.jpg);
-	}
-}
+// .educationCTA{
+// 	background-image: url(../images/TT_education.jpg);
+// 	&:hover {
+// 		background-image: url(../images/TT_education_colorized.jpg);
+// 	}
+// }
 
-.ttCTA{
-	background-image: url(../images/TT_TTsite.jpg);
-	&:hover {
-		background-image: url(../images/TT_TTsite_colorized.jpg);
-	}
-}
+// .ttCTA{
+// 	background-image: url(../images/TT_TTsite.jpg);
+// 	&:hover {
+// 		background-image: url(../images/TT_TTsite_colorized.jpg);
+// 	}
+// }
 
-.ssCTA{
-	background-image: url(../images/TT_SublimeScript.jpg);
-	&:hover {
-		background-image: url(../images/TT_SublimeScript_colorized.jpg);
-	}
-}
+// .ssCTA{
+// 	background-image: url(../images/TT_SublimeScript.jpg);
+// 	&:hover {
+// 		background-image: url(../images/TT_SublimeScript_colorized.jpg);
+// 	}
+// }
 
-.githubCTA{
-	background-image: url(../images/TT_Github.jpg);
-	&:hover {
-		background-image: url(../images/TT_Github_colorized.jpg);
-	}
-}
+// .githubCTA{
+// 	background-image: url(../images/TT_Github.jpg);
+// 	&:hover {
+// 		background-image: url(../images/TT_Github_colorized.jpg);
+// 	}
+// }
