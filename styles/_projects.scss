@@ -39,20 +39,41 @@
 	}
 }
 
+.emailCurrent {
+	// border-bottom: 10px solid $purple !important;
+	background-image: url(../images/TT_strategy_colorized.jpg) !important;
+	border: 7px solid $purple !important;
+}
+
+.copyCurrent {
+	background-image: url(../images/TT_copy_colorized.jpg) !important;
+		border: 7px solid $purple !important;
+
+}
+
+.educationCurrent{
+	background-image: url(../images/TT_education_colorized.jpg) !important;
+	border: 7px solid $purple !important;
+
+}
 
 .workImage{
-	width: 260px;
-	height: 180px;
-	border-radius: 45px;
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
 	color: $lightGray;
 	border: 0;
 	font-size: 24px;
 	font-weight: 300px;
+	border: 7px solid white;
+	// border: 7px solid $transparent;
 	&:focus{
 		outline: 0;
 	}
 	&:hover{
 		cursor:pointer;
+		border: 7px solid $purple;
+
 	}
 }
 

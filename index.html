@@ -21,7 +21,31 @@
 		<!-- header image -->
 		<div class="header">
 			<h1>TYREL TJOELKER</h1>
-		</div>
+			<!-- <div class="centeredCTA">
+			<a href="#connect" class="scroll">
+				<button type="button" class="primaryCTA">CTA</button>
+			</a>
+		</div> -->
+	</div>
+<!-- test from Alex Cerezo -->
+	<header>
+        <a class="menu-icon jiji">
+            <span></span>
+        </a>
+        <nav class="menu visuallyhidden">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#work">My Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+<!-- end test -->
+
+
 		<!-- nav bar -->
 		<nav>
 			<div>
@@ -42,7 +66,7 @@
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, architecto, beatae, perspiciatis, laborum magni facere quod iste inventore expedita odio fugit natus ab eius dicta placeat sed excepturi tenetur dolor harum voluptatibus doloremque temporar unde esse repellendus saepe ipsa in voluptas dignissimos obcaecati quae eos corrupti nulla officiis temporibus incidunt.</p>
 		
 		<div class="centeredCTA">
-			<a href="">
+			<a href="#connect" class="scroll">
 				<button type="button" class="primaryCTA">Connect with me</button>
 			</a>
 		</div>
@@ -55,11 +79,10 @@
 		<h1>Marketing</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, voluptatum molestiae quidem quia laborum ullam eaque iure odio laudantium illo.</p>
 		<div class="projectImages">
-
 				<ul>
-					<li><a href=""><button class="emailCTA workImage" ng-click='setCurrent(1)'>Email marketing</button></a></li>
-					<li><a href=""><button type="button" class="copyCTA workImage" ng-click='setCurrent(2)'>Copywriting</button></a></li>
-					<li><a href=""><button type="button" class="educationCTA workImage" ng-click='setCurrent(3)'>Education</button></a></li>
+					<li><a href=""><button ng-class='{emailCurrent: current == 1}' class="emailCTA workImage" ng-click='setCurrent(1)'>Email marketing</button></a></li>
+					<li><a href=""><button ng-class='{copyCurrent: current == 2}' class="copyCTA workImage" ng-click='setCurrent(2)'>Copywriting</button></a></li>
+					<li><a href=""><button ng-class='{educationCurrent: current == 3}' class="educationCTA workImage" ng-click='setCurrent(3)'>Education</button></a></li>
 				</ul>
 			
 		</div>
@@ -214,7 +237,7 @@
 		</div>
 	<!-- Connect -->
 		</div>
-		<div class="contact">
+		<div class="contact" id="connect">
 			<h1>Let&rsquo;s connect:</h1>
 			<ul>
 				<li><div class="whiteCircleHover"><img src="images/gitHub.png" /></div></li>
@@ -251,6 +274,12 @@
 		setHeight();
 		$(window).resize(function() {
 			setHeight();
+		});
+		$(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+			});
 		});
 	</script>
 </body>

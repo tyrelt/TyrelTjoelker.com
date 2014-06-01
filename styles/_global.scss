@@ -19,7 +19,7 @@ $yellow: rgb(250,155,30);
 
 body {
 	margin: 0 auto;
-	background-color: $lightGray;
+	background-color: white;
 	height: auto;
 	min-height: 100%;
     font-family: sans-serif;
@@ -34,12 +34,14 @@ h1 {
     text-align: center;
 	font-size: 46px;
 	font-weight: 700;
+	// color: $darkGray;
 }
 
 h2{ 
 	// margin: 0 15px 25px 15px;
 	font-size: 36px;
 	font-weight: 600;
+	// color: $darkGray;
 }
 
 h3{ 
@@ -48,6 +50,7 @@ h3{
 
 p{ 
 	font-size: 22px;
+	color: $darkGray;
 }
 
 
@@ -79,8 +82,8 @@ p{
 	max-width: 1000px;
 }
 .headerBackground {
-    // background: url(../images/tyrelAndPam.jpg) no-repeat center center fixed;
-    background-color: $purple;
+    background: url(../images/tyrelAndPam.jpg) no-repeat center center fixed;
+    // background-color: $purple;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -123,10 +126,10 @@ p{
 .primaryCTA{
 	width: 200px;
 	height: 50px;
-	background-color: $lightGray;
+	background-color: white;
 	border-radius: 45px;
-	color: black;
-	border: 3px solid black;
+	color: $darkGray;
+	border: 4px solid $darkGray;
 	font-size: 18px;
 	font-weight: 300px;
 
