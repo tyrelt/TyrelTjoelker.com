@@ -39,7 +39,7 @@ h1 {
 
 h2{ 
 	// margin: 0 15px 25px 15px;
-	font-size: 36px;
+	font-size: 2em;
 	font-weight: 600;
 	// color: $darkGray;
 }
@@ -49,9 +49,17 @@ h3{
 }
 
 p{ 
-	font-size: 22px;
+	font-size: 1.3em;
+	color: $darkGray;
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+li { 
+	font-size: 1.3em;
 	color: $darkGray;
 }
+
 
 
 // Useful classes
@@ -115,22 +123,28 @@ p{
 
 
 .padding50{
-	padding:50px 0;
+	padding-top:50px;
 }
 .padding70 {
 	padding:70px 0;
 }
 
+.padding100 {
+	padding-top: 100px;
+}
+.margin100 {
+	margin-top: 100px;
+}
 // buttons
 
 .primaryCTA{
-	width: 200px;
-	height: 50px;
+	width: 250px;
+	height: 65px;
 	background-color: white;
-	border-radius: 45px;
+	border-radius: 50px;
 	color: $darkGray;
 	border: 4px solid $darkGray;
-	font-size: 18px;
+	font-size: 1.3em;
 	font-weight: 300px;
 
 	&:focus{
@@ -143,8 +157,27 @@ p{
 	}
 }
 
-.centeredCTA {
+.wide{
+	width: 320px;
+	height: 75px;
+	border-radius: 70px;
+}
+
+.centeredContainer {
 	margin: 0 auto;
 	text-align: center;
 	display: block;
+}
+
+.rightContainer {
+	text-align: right;
+	display: block;
+}
+
+.rightExtend{
+	margin: 7% 25% 0 0;
+}
+
+.topExtend{
+	margin-top: 3%;
 }

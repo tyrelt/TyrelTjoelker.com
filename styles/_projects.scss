@@ -38,9 +38,21 @@
 		}
 	}
 }
+.ttCurrent{
+	background-image: url(../images/TT_TTsite_colorized.jpg) !important;
+	border: 7px solid $purple !important;
+}
 
+.ssCurrent{
+	background-image: url(../images/TT_SublimeScript_colorized.jpg) !important;
+	border: 7px solid $purple !important;
+}
+
+.githubCurrent{
+	background-image: url(../images/TT_Github_colorized.jpg) !important;
+	border: 7px solid $purple !important;
+}
 .emailCurrent {
-	// border-bottom: 10px solid $purple !important;
 	background-image: url(../images/TT_strategy_colorized.jpg) !important;
 	border: 7px solid $purple !important;
 }
@@ -96,5 +108,26 @@
 	background-image: url(../images/TT_education.jpg);
 	&:hover {
 		background-image: url(../images/TT_education_colorized.jpg);
+	}
+}
+
+.ttCTA{
+	background-image: url(../images/TT_TTsite.jpg);
+	&:hover {
+		background-image: url(../images/TT_TTsite_colorized.jpg);
+	}
+}
+
+.ssCTA{
+	background-image: url(../images/TT_SublimeScript.jpg);
+	&:hover {
+		background-image: url(../images/TT_SublimeScript_colorized.jpg);
+	}
+}
+
+.githubCTA{
+	background-image: url(../images/TT_Github.jpg);
+	&:hover {
+		background-image: url(../images/TT_Github_colorized.jpg);
 	}
 }
