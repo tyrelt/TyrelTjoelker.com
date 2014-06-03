@@ -21,7 +21,7 @@
 .navBullets {
     font-size: 80px;
     display: inline-block;
-    color: $gray;
+    color: $mediumGray;
     font-family: garamond; // Open Sans seems to ovalize the bullets?
     &:hover {
         color: $lightBlue;

@@ -2,25 +2,31 @@
 
 .leftColumn{
 	float: left;
-	width: 30%;	
+	width: 65%;	
 	min-height: 70px;
-	text-align: right;
-	border-right: 2px solid $yellow;
-	ul{
-		li{
-			margin-right: 10px;
-			font-size: 22px;
-		}
+	text-align: left;
+	// border-right: 4px solid $yellow;
+	p{
+		margin: 0 5px 0 0;
+		padding: 0;
 	}
 	
 }
 
 .rightColumn{
 	float: right;
-	width: 65%;
+	width: 30%;
+	// border-left: 4px solid $yellow;
+	padding-left: 20px;
 	p{
 		margin: 0;
 		padding: 0;
+	}
+	ul {
+		border-left: 4px solid $yellow;
+		padding-left: 15px;
+		list-style-type: disc;
+		list-style-position: inside;
 	}
 }
 
@@ -29,14 +35,17 @@
 // button styles
 
 .projectImages{
-	margin: 40px;
+	margin: 40px 0;
 	ul{
 		text-align: center;
 		li{
 			display: inline-block;
-			margin: 0 2%;
 		}
 	}
+}
+
+.centerCircle {
+	margin: 0 4%;
 }
 
 .currentBackground {

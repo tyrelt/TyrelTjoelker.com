@@ -42,3 +42,18 @@
     margin: 0 auto;
    }
 }
+
+@media (max-width: 900px) {
+    .rightContainer{
+        margin: 0 auto;
+        text-align: center;
+        float:none;
+        width:100%;
+        clear: both;
+        button{
+            float:none;
+             margin-top: 60px;
+        }
+     }  
+
+}

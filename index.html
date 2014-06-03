@@ -21,47 +21,27 @@
 		<!-- header image -->
 		<div class="header">
 			<h1>TYREL TJOELKER</h1>
-			<!-- <div class="centeredCTA">
-			<a href="#connect" class="scroll">
-				<button type="button" class="primaryCTA">CTA</button>
-			</a>
-		</div> -->
+		
 	</div>
-<!-- test from Alex Cerezo -->
-	<!-- <header>
-        <a class="menu-icon jiji">
-            <span></span>
-        </a>
-        <nav class="menu visuallyhidden">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About me</a></li>
-                <li><a href="#work">My Works</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header> -->
 
-
-<!-- end test -->
 
 
 		<!-- nav bar -->
 		<nav>
 			<div>
 				<ul>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Projects and skills</a></li>
-					<li><a href="#">Kind words</a></li>
-					<li><a href="#">Connect</a></li>
+					<li><a href="#about" class="scroll">About</a></li>
+					<li><a href="#projects" class="scroll">Projects</a></li>
+					<li><a href="#kindWords" class="scroll">Kind words</a></li>
+					<li><a href="#connect" class="scroll">Connect</a></li>
 				</ul>
 			</div>
 		</nav>
-		<div class="borderBottom"></div>
+<!-- 		<div class="borderBottom"></div> -->
 	</div>
 <!-- About section -->
 <div class="wrap">
-	<div class="padding50">
+	<div class="padding50" id="about">
 		<h1>About Tyrel</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, architecto, beatae, perspiciatis, laborum magni facere quod iste inventore expedita odio fugit natus ab eius dicta placeat sed excepturi tenetur dolor harum voluptatibus doloremque temporar unde esse repellendus saepe ipsa in voluptas dignissimos obcaecati quae eos corrupti nulla officiis temporibus incidunt.</p>
 		
@@ -75,72 +55,84 @@
 	</div>
 	
 	<!-- Start three-column stuff -->
-	<div class="email padding100" ng-controller='emailController'>
+	<div class="email padding100" id="projects" ng-controller='emailController'>
 		<h1>Marketing</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, voluptatum molestiae quidem quia laborum ullam eaque iure odio laudantium illo.</p>
 		<div class="projectImages">
 				<ul>
 					<li><a href=""><button ng-class='{currentBackground: current == 1}' class="emailCTA workImage" ng-click='setCurrent(1)'>Email marketing</button></a></li>
-					<li><a href=""><button ng-class='{currentBackground: current == 2}' class="copyCTA workImage" ng-click='setCurrent(2)'>Copywriting</button></a></li>
+					<li class="centerCircle"><a href=""><button ng-class='{currentBackground: current == 2}' class="copyCTA workImage" ng-click='setCurrent(2)'>Copywriting</button></a></li>
 					<li><a href=""><button ng-class='{currentBackground: current == 3}' class="educationCTA workImage" ng-click='setCurrent(3)'>Education</button></a></li>
 				</ul>
 			
 		</div>
 
 		<div ng-show='current == 1'>
-			<div class="leftColumn" style="color:red;">
-				<ul>
-					<li>Logos Bible Software</li>
-					<li>Bellingham, WA 98225</li>
-					<li>June 2013&ndash;present</li>
-				</ul>
+			<div class="leftColumn">
+				<h3>Lorem ipsum dolor sit amet, consectetur.</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, at, est, unde, labore amet corporis nam velit provident molestias ducimus aspernatur aut. Harum, dolores, veniam, similique iste quae voluptas quasi impedit ratione totam neque dolor labore aliquid numquam a quisquam fuga quidem consectetur dolorum officiis assumenda et ea hic odio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, temporibus id laudantium qui consequuntur iste.</p>
+
+
 			</div>
 			
 			<div class="rightColumn">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, recusandae aliquam veritatis nostrum suscipit sequi doloremque officiis totam officia aperiam eius perferendis cupiditate ipsum minima dolor perspiciatis quam debitis pariatur?</p>
-				<div class="rightContainer">
-					<a href="#connect" class="scroll">
-						<button class="primaryCTA rightExtend">See a work sample</button>
-					</a>
-				</div>
+				<h3>Summary of skills</h3>
+					
+				<ul>
+					<li>Email automation</li>
+					<li>A/B testing</li>
+					<li>Lyris ListManager</li>
+					<li>Email HTML and CSS</li>
+					<li>List management</li>
+					<li>List growth</li>
+				</ul>
+			</div>
+			<div class="rightContainer">
+				<a href="#connect" class="scroll">
+					<button class="primaryCTA">See a work sample</button>
+				</a>
 			</div>
 		</div>
 
 		<div ng-show='current == 2'>
-			<div class="leftColumn" style="color:purple;"><ul>
-				<li>Logos Bible Software</li>
-				<li>Bellingham, WA 98225</li>
-				<li>June 2013&ndash;present</li>
-			</ul></div>
+			<div class="leftColumn">
+				<h3>Lorem ipsum dolor sit.</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate velit eveniet voluptatibus vitae eligendi. Dignissimos, ex, soluta nihil deserunt fugit eveniet saepe quas facilis laborum asperiores corporis optio illum voluptas?</p>
+			</div>
 
 			<div class="rightColumn">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, recusandae aliquam veritatis nostrum suscipit sequi doloremque officiis totam officia aperiam eius perferendis cupiditate ipsum minima dolor perspiciatis quam debitis pariatur?</p>
-				<div class="rightContainer">
-					<a href="#connect" class="scroll">
-						<button class="primaryCTA rightExtend">See a work sample</button>
-					</a>
-				</div>
-			</div>
-		</div>
-
-		<div ng-show='current == 3'>
-			<div class="leftColumn" style="color:green;">
+				<h3>Summary of skills</h3>
 				<ul>
 					<li>Logos Bible Software</li>
 					<li>Bellingham, WA 98225</li>
 					<li>June 2013&ndash;present</li>
 				</ul>
 			</div>
+			<div class="rightContainer">
+				<a href="#connect" class="scroll">
+					<button class="primaryCTA">See a work sample</button>
+				</a>
+			</div>
+		</div>
+
+		<div ng-show='current == 3'>
+			<div class="leftColumn">
+				<h3>Lorem ipsum dolor sit amet.</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate velit eveniet voluptatibus vitae eligendi. Dignissimos, ex, soluta nihil deserunt fugit eveniet saepe quas facilis laborum asperiores corporis optio illum voluptas? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, iusto.</p>
+			</div>
 
 			<div class="rightColumn">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, recusandae aliquam veritatis nostrum suscipit sequi doloremque officiis totam officia aperiam eius perferendis cupiditate ipsum minima dolor perspiciatis quam debitis pariatur?</p>
-
-				<div class="rightContainer">
-					<a href="#connect" class="scroll">
-						<button class="primaryCTA rightExtend">See a work sample</button>
-					</a>
-				</div>
-
+				<h3>Summary of skills</h3>
+				<ul>
+					<li>Logos Bible Software</li>
+					<li>Bellingham, WA 98225</li>
+					<li>June 2013&ndash;present</li>
+				</ul>
+			</div>
+			<div class="rightContainer">
+				<a href="#connect" class="scroll">
+					<button class="primaryCTA">See a work sample</button>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -149,67 +141,75 @@
 
 	<div class="web clear padding100" ng-controller='webController'>
 		<h1>Code</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, voluptatum molestiae quidem quia laborum ullam eaque iure odio laudantium illo.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, numquam, minima, repellendus, ad inventore dolores rerum nesciunt animi aliquam ducimus nobis aspernatur magnam quae beatae quisquam repellat tenetur rem dignissimos.</p>
 		<div class="projectImages">
 				<ul>
-					<li><a href=""><button ng-class='{ttCurrent: current == 1}' class="ttCTA workImage" ng-click='setCurrent(1)'>My site</button></a></li>
-					<li><a href=""><button ng-class='{ssCurrent: current == 2}' class="ssCTA workImage" ng-click='setCurrent(2)'>SublimeScript</button></a></li>
-					<li><a href=""><button ng-class='{githubCurrent: current == 3}' class="githubCTA workImage" ng-click='setCurrent(3)'>Github</button></a></li>
+					<li><a href=""><button ng-class='{currentBackground: current == 1}' class="ttCTA workImage" ng-click='setCurrent(1)'>My site</button></a></li>
+					<li><a href=""><button ng-class='{currentBackground: current == 2}' class="ssCTA workImage" ng-click='setCurrent(2)'>SublimeScript</button></a></li>
+					<li><a href=""><button ng-class='{currentBackground: current == 3}' class="githubCTA workImage" ng-click='setCurrent(3)'>Github</button></a></li>
 				</ul>
 			
 		</div>
 	<div ng-show='current == 1'>
-			<div class="leftColumn" style="color:red;">
+		<div class="leftColumn">
+				<h3>Lorem ipsum dolor sit amet.</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate velit eveniet voluptatibus vitae eligendi. Dignissimos, ex, soluta nihil deserunt fugit.</p>
+			</div>
+
+			<div class="rightColumn">
+				<h3>Summary of skills</h3>
 				<ul>
 					<li>Logos Bible Software</li>
 					<li>Bellingham, WA 98225</li>
 					<li>June 2013&ndash;present</li>
 				</ul>
 			</div>
-			
-			<div class="rightColumn">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, recusandae aliquam veritatis nostrum suscipit sequi doloremque officiis totam officia aperiam eius perferendis cupiditate ipsum minima dolor perspiciatis quam debitis pariatur?</p>
-				<div class="rightContainer">
-					<a href="#connect" class="scroll">
-						<button class="primaryCTA rightExtend">See a work sample</button>
-					</a>
-				</div>
+			<div class="rightContainer">
+				<a href="#connect" class="scroll">
+					<button class="primaryCTA">See a work sample</button>
+				</a>
 			</div>
 		</div>
 
 		<div ng-show='current == 2'>
-			<div class="leftColumn" style="color:purple;"><ul>
-				<li>Logos Bible Software</li>
-				<li>Bellingham, WA 98225</li>
-				<li>June 2013&ndash;present</li>
-			</ul></div>
+			<div class="leftColumn">
+				<h3>Lorem ipsum dolor sit amet.</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate velit eveniet voluptatibus vitae eligendi. Dignissimos, ex, soluta nihil deserunt fugit eveniet saepe quas facilis laborum asperiores corporis optio illum voluptas? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, iusto. Lorem ipsum dolor sit amet.</p>
+			</div>
 
 			<div class="rightColumn">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, recusandae aliquam veritatis nostrum suscipit sequi doloremque officiis totam officia aperiam eius perferendis cupiditate ipsum minima dolor perspiciatis quam debitis pariatur?</p>
-				<div class="rightContainer">
-					<a href="#connect" class="scroll">
-						<button class="primaryCTA rightExtend">See a work sample</button>
-					</a>
-				</div>
-			</div>
-		</div>
-
-		<div ng-show='current == 3'>
-			<div class="leftColumn" style="color:green;">
+				<h3>Summary of skills</h3>
 				<ul>
 					<li>Logos Bible Software</li>
 					<li>Bellingham, WA 98225</li>
 					<li>June 2013&ndash;present</li>
 				</ul>
 			</div>
+			<div class="rightContainer">
+				<a href="#connect" class="scroll">
+					<button class="primaryCTA">See a work sample</button>
+				</a>
+			</div>
+		</div>
+
+		<div ng-show='current == 3'>
+			<div class="leftColumn">
+				<h3>Lorem ipsum dolor sit amet.</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate velit eveniet voluptatibus vitae eligendi. Dignissimos, ex, soluta nihil deserunt fugit eveniet saepe quas facilis laborum asperiores corporis optio illum voluptas?</p>
+			</div>
 
 			<div class="rightColumn">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, recusandae aliquam veritatis nostrum suscipit sequi doloremque officiis totam officia aperiam eius perferendis cupiditate ipsum minima dolor perspiciatis quam debitis pariatur?</p>
-				<div class="rightContainer">
-					<a href="#connect" class="scroll">
-						<button class="primaryCTA rightExtend">See a work sample</button>
-					</a>
-				</div>
+				<h3>Summary of skills</h3>
+				<ul>
+					<li>Logos Bible Software</li>
+					<li>Bellingham, WA 98225</li>
+					<li>June 2013&ndash;present</li>
+				</ul>
+			</div>
+			<div class="rightContainer">
+				<a href="#connect" class="scroll">
+					<button class="primaryCTA">See a work sample</button>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -218,23 +218,25 @@
 	<!-- End three-column stuff -->
 	
 	<!-- Kind words -->
-		<div class="clear padding100">
+		<div class="clear padding100" id="kindWords">
 			<custom-slider></custom-slider>
 		</div>
 	<!-- Connect -->
 		</div>
-		<div class="contact margin100" id="connect">
-			<h1>Let&rsquo;s connect:</h1>
-			<ul>
-				<li><div class="whiteCircleHover"><img src="images/gitHub.png" /></div></li>
-				<li><div class="whiteCircleHover"><img src="images/linkedin.png" /></div></li>
-				<li><div class="whiteCircleHover"><img src="images/twitter.png" /></div></li>
-			</ul>
-			<div class="centeredContainer">
-			<a href="#connect" class="scroll">
-				<button type="button" class="primaryCTA wide">tyrel.tjoelker@gmail.com</button>
-			</a>
-		</div>		
+			<div class="contact margin100" id="connect">
+				<div class="contactInfo">
+					<h1>Let&rsquo;s connect:</h1>
+					<ul>
+						<!-- <li><div class="whiteCircleHover"><img src="images/gitHub.png" /></div></li> -->
+						<li><div class="whiteCircleHover"><img src="images/LinkedInOutline.png" /></div></li>
+						<li><div class="whiteCircleHover"><img src="images/twitterOutline.png" /></div></li>
+					</ul>
+					<div class="centeredContainer">
+					<a href="#connect" class="scroll">
+						<button type="button" class="primaryCTA wide">tyrel.tjoelker@gmail.com</button>
+					</a>
+				</div>
+			</div>		
 		</div>
 
 	
@@ -247,18 +249,32 @@
 	</footer>
 	<script>
 		function setHeight() {
+			// Set minimums
+			minCtaHeight = 400;
+			
+			// Measure stuff
 			totalHeight = $(window).height();
 			navHeight = $('nav').height();
 			h1Height = $('h1').height();
+			footerHeight = $('footer').height();
 			borderHeight = $('.borderBottom').height();
+			contactInfoHeight = $('.contactInfo').height();
+			
+			// Calculate stuff
+			ctaHeight = totalHeight - footerHeight;
+			if (ctaHeight < minCtaHeight) {
+				ctaHeight = minCtaHeight;
+			}
 			imageHeight = totalHeight - (navHeight + borderHeight);
-			// if (imageHeight < 300) {
-			// 	imageHeight = 300;
-			// }
-			topPaddingHeight = imageHeight / 2.25
+			topPaddingHeight = imageHeight / 2.25;
+			ctaPaddingHeight = ((ctaHeight - contactInfoHeight) / 3);
+			
+			// Apply heights
 			$('.headerBackground').css({"height": totalHeight})
 			$('.header').css({"height": imageHeight});
 			$('.header h1').css({"margin-top": topPaddingHeight});
+			$('#connect').css({'height': ctaHeight});
+			$('.contactInfo').css({'padding-top': ctaPaddingHeight});
 		}
 		setHeight();
 		$(window).resize(function() {

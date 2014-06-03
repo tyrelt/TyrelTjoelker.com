@@ -9,24 +9,31 @@ div.contact {
 .contact{
     li {
         display: inline-block; // "floats" the icons
+        margin: 0 2px;
         .whiteCircleHover {
-            border-radius: 50px; // intentionally smaller than the img width
-            width: 100px;
-            height: 100px;
+            border-radius: 60px; // intentionally smaller than the img width
+            width: 120px;
+            height: 120px;
             display: inline-block;
             position: relative; // So we can absolute position the image on top
             margin: 49px 15px 40px 15px; // Just for regular old spacing
             img {
                 position: absolute;
                 // width: 120px;
-                left: -15px; // No elegant argument for this: it's just what works
-                top: -15px;
+                left: -6px; // No elegant argument for this: it's just what works
+                top: -6px;
             }
             &:hover {
-                background-color: $lightGray;
+                background-color: white;
                 cursor: pointer;
             }
         }
     }
 
+}
+
+#connect {
+    margin: 0;
+    padding: 0;
+    margin-top: 100px;
 }
