@@ -50,10 +50,52 @@
         float:none;
         width:100%;
         clear: both;
+        padding-top: 40px;
+        margin-bottom: 40px;
         button{
             float:none;
-             margin-top: 60px;
         }
      }  
-
+   
 }
+
+@media (max-width: 768px) {
+    .desktopHidden{
+        display:block;
+    }
+    .mobileHidden{
+        display:none;
+    }
+    .workImage{
+        color:white;
+        background-color: $darkGray;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        margin-top: 20px;
+        &:hover{
+            cursor:default;
+        }
+    }
+    .leftColumn{
+        float: none;
+        width: 100%;
+    }
+    .rightColumn{
+        float: none;
+        width: 100%;
+        margin-top:20px; 
+        margin-bottom:40px;
+        padding-left: 0;
+    }
+   
+
+    .rightContainer{
+        padding-top: 0;
+        margin-bottom: 60px;
+    } 
+    .last{
+    margin-bottom: 0;
+    }
+    
+}
+

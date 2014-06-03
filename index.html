@@ -2,6 +2,7 @@
 <html lang="en" ng-app='tyrelSite' ng-init>
 <head>
 	<meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>TyrelTjoelker.com</title>
 	<link rel="stylesheet" type="text/css" href="styles/styles.css" />
 	<!-- Angular -->
@@ -58,7 +59,7 @@
 	<div class="email padding100" id="projects" ng-controller='emailController'>
 		<h1>Marketing</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, voluptatum molestiae quidem quia laborum ullam eaque iure odio laudantium illo.</p>
-		<div class="projectImages">
+		<div class="projectImages mobileHidden">
 				<ul>
 					<li><a href=""><button ng-class='{currentBackground: current == 1}' class="emailCTA workImage" ng-click='setCurrent(1)'>Email marketing</button></a></li>
 					<li class="centerCircle"><a href=""><button ng-class='{currentBackground: current == 2}' class="copyCTA workImage" ng-click='setCurrent(2)'>Copywriting</button></a></li>
@@ -67,7 +68,9 @@
 			
 		</div>
 
-		<div ng-show='current == 1'>
+		<div class="visible" ng-class='{visible: current ==1, desktopHidden: current != 1}'>
+		<div><button class="emailCTA workImage desktopHidden">Email marketing</button></div>
+
 			<div class="leftColumn">
 				<h3>Lorem ipsum dolor sit amet, consectetur.</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, at, est, unde, labore amet corporis nam velit provident molestias ducimus aspernatur aut. Harum, dolores, veniam, similique iste quae voluptas quasi impedit ratione totam neque dolor labore aliquid numquam a quisquam fuga quidem consectetur dolorum officiis assumenda et ea hic odio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, temporibus id laudantium qui consequuntur iste.</p>
@@ -94,7 +97,8 @@
 			</div>
 		</div>
 
-		<div ng-show='current == 2'>
+		<div ng-class='{visible: current ==2, desktopHidden: current != 2}'>
+		<div><button class="emailCTA workImage desktopHidden">Copywriting</button></div>
 			<div class="leftColumn">
 				<h3>Lorem ipsum dolor sit.</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate velit eveniet voluptatibus vitae eligendi. Dignissimos, ex, soluta nihil deserunt fugit eveniet saepe quas facilis laborum asperiores corporis optio illum voluptas?</p>
@@ -115,7 +119,8 @@
 			</div>
 		</div>
 
-		<div ng-show='current == 3'>
+		<div ng-class='{visible: current ==3, desktopHidden: current != 3}'>
+		<div><button class="emailCTA workImage desktopHidden">Education</button></div>
 			<div class="leftColumn">
 				<h3>Lorem ipsum dolor sit amet.</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate velit eveniet voluptatibus vitae eligendi. Dignissimos, ex, soluta nihil deserunt fugit eveniet saepe quas facilis laborum asperiores corporis optio illum voluptas? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, iusto.</p>
@@ -129,7 +134,7 @@
 					<li>June 2013&ndash;present</li>
 				</ul>
 			</div>
-			<div class="rightContainer">
+			<div class="rightContainer last">
 				<a href="#connect" class="scroll">
 					<button class="primaryCTA">See a work sample</button>
 				</a>
@@ -142,15 +147,16 @@
 	<div class="web clear padding100" ng-controller='webController'>
 		<h1>Code</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, numquam, minima, repellendus, ad inventore dolores rerum nesciunt animi aliquam ducimus nobis aspernatur magnam quae beatae quisquam repellat tenetur rem dignissimos.</p>
-		<div class="projectImages">
+		<div class="projectImages mobileHidden">
 				<ul>
-					<li><a href=""><button ng-class='{currentBackground: current == 1}' class="ttCTA workImage" ng-click='setCurrent(1)'>My site</button></a></li>
-					<li><a href=""><button ng-class='{currentBackground: current == 2}' class="ssCTA workImage" ng-click='setCurrent(2)'>SublimeScript</button></a></li>
-					<li><a href=""><button ng-class='{currentBackground: current == 3}' class="githubCTA workImage" ng-click='setCurrent(3)'>Github</button></a></li>
+					<li><a href=""><button ng-class='{currentBackground: current == 1}' class="emailCTA workImage" ng-click='setCurrent(1)'>Email marketing</button></a></li>
+					<li class="centerCircle"><a href=""><button ng-class='{currentBackground: current == 2}' class="copyCTA workImage" ng-click='setCurrent(2)'>Copywriting</button></a></li>
+					<li><a href=""><button ng-class='{currentBackground: current == 3}' class="educationCTA workImage" ng-click='setCurrent(3)'>Education</button></a></li>
 				</ul>
 			
 		</div>
-	<div ng-show='current == 1'>
+	<div class="visible" ng-class='{visible: current ==1, desktopHidden: current != 1}'>
+		<div><button class="emailCTA workImage desktopHidden">My site</button></div>
 		<div class="leftColumn">
 				<h3>Lorem ipsum dolor sit amet.</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate velit eveniet voluptatibus vitae eligendi. Dignissimos, ex, soluta nihil deserunt fugit.</p>
@@ -171,7 +177,8 @@
 			</div>
 		</div>
 
-		<div ng-show='current == 2'>
+		<div class="visible" ng-class='{visible: current ==2, desktopHidden: current != 2}'>
+			<div><button class="emailCTA workImage desktopHidden">SublimeScript</button></div>
 			<div class="leftColumn">
 				<h3>Lorem ipsum dolor sit amet.</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate velit eveniet voluptatibus vitae eligendi. Dignissimos, ex, soluta nihil deserunt fugit eveniet saepe quas facilis laborum asperiores corporis optio illum voluptas? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, iusto. Lorem ipsum dolor sit amet.</p>
@@ -192,7 +199,8 @@
 			</div>
 		</div>
 
-		<div ng-show='current == 3'>
+		<div class="visible" ng-class='{visible: current ==3, desktopHidden: current != 3}'>
+			<div><button class="emailCTA workImage desktopHidden">Github</button></div>
 			<div class="leftColumn">
 				<h3>Lorem ipsum dolor sit amet.</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate velit eveniet voluptatibus vitae eligendi. Dignissimos, ex, soluta nihil deserunt fugit eveniet saepe quas facilis laborum asperiores corporis optio illum voluptas?</p>
@@ -206,7 +214,7 @@
 					<li>June 2013&ndash;present</li>
 				</ul>
 			</div>
-			<div class="rightContainer">
+			<div class="rightContainer last">
 				<a href="#connect" class="scroll">
 					<button class="primaryCTA">See a work sample</button>
 				</a>
@@ -250,7 +258,7 @@
 	<script>
 		function setHeight() {
 			// Set minimums
-			minCtaHeight = 400;
+			minCtaHeight = 450;
 			
 			// Measure stuff
 			totalHeight = $(window).height();
