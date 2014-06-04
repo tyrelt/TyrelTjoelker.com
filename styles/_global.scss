@@ -35,29 +35,31 @@ h1 {
     text-align: center;
 	font-size: 46px;
 	font-weight: 700;
-	// color: $darkGray;
+	color: $darkGray;
 }
 
 h2{ 
 	// margin: 0 15px 25px 15px;
 	font-size: 2em;
 	font-weight: 600;
-	// color: $darkGray;
+	color: $darkGray;
 }
 
 h3{ 
+	font-size: 1.3em;
 	margin: 0 0 10px 0;
+	color: $darkGray;
 }
 
 p{ 
-	font-size: 1.3em;
+	font-size: 1.2em;
 	color: $darkGray;
 	padding: 0;
 	margin-bottom: 20px;
 }
 
 li { 
-	font-size: 1.3em;
+	font-size: 1.2em;
 	color: $darkGray;
 }
 
@@ -124,7 +126,7 @@ li {
 }
 .profile {
 	position: absolute;
-	top: 115px;
+	top: 130px;
 	height: 200px;
 	width: 200px;
 	border-radius:100px;
@@ -193,10 +195,11 @@ li {
 }
 
 .rightContainer {
+	clear: both;
 	text-align: right;
 	display: block;
 	float: right;
-	width: 30%;
+	width: 35%;
 	margin-top: 60px;
 	button{
 		float: left;

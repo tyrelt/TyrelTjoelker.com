@@ -2,7 +2,7 @@
 
 .leftColumn{
 	float: left;
-	width: 65%;	
+	width: 60%;	
 	min-height: 70px;
 	text-align: left;
 	// border-right: 4px solid $yellow;
@@ -15,7 +15,7 @@
 
 .rightColumn{
 	float: right;
-	width: 30%;
+	width: 35%;
 	// border-left: 4px solid $yellow;
 	padding-left: 20px;
 	p{
@@ -27,6 +27,7 @@
 		padding-left: 15px;
 		list-style-type: disc;
 		list-style-position: inside;
+		line-height: 1.6em;
 	}
 }
 
