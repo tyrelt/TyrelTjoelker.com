@@ -23,6 +23,13 @@
     padding: 0;
     margin-top: 100px;
 }
+.imageLoader {
+    position: relative;
+    img {
+        position: absolute;
+        left: -9999px
+    }
+}
 
 .shareIcon {
     display: block;

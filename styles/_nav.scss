@@ -24,6 +24,7 @@ nav {
                 border-top: 4px solid $transparent;
                 &:hover {
                     border-top: 4px solid $yellow;
+                    color: $yellow;
                 }
             }
         }
