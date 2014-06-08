@@ -5,6 +5,8 @@
 	 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>TyrelTjoelker.com</title>
 	<link rel="stylesheet" type="text/css" href="styles/styles.css" />
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,100,100italic|Fira+Sans:300,400' rel='stylesheet' type='text/css'>
+
 	<!-- Angular -->
 	<script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js'></script>
 	<!-- Angular for slider -->
@@ -24,9 +26,6 @@
 			<h1>TYREL TJOELKER</h1>
 		
 	</div>
-
-
-
 		<!-- nav bar -->
 		<nav>
 			<div>
@@ -44,22 +43,22 @@
 <div class="wrap">
 	<div class="padding50" id="about">
 	
-		<h1>About Tyrel</h1>
+		<h1>ABOUT ME</h1>
 		<img src="images/profile.jpg" class="profile mobileHidden"/>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, architecto, beatae, perspiciatis, laborum magni facere quod iste inventore expedita odio fugit natus ab eius dicta placeat sed excepturi tenetur dolor harum voluptatibus doloremque temporar unde esse repellendus saepe ipsa in voluptas dignissimos obcaecati quae eos corrupti nulla officiis temporibus incidunt.</p>
 		
-		<div class="centeredContainer">
+		
 			<a href="#connect" class="scroll">
 				<button type="button" class="primaryCTA topExtend">Connect with me</button>
 			</a>
-		</div>
+		
 
 
 	</div>
 	
 	<!-- Start three-column stuff -->
 	<div class="email padding100" id="projects" ng-controller='emailController'>
-		<h1>Marketing</h1>
+		<h1>MARKETING PROJECTS</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, voluptatum molestiae quidem quia laborum ullam eaque iure odio laudantium illo.</p>
 		<div class="projectImages mobileHidden">
 				<ul>
@@ -74,8 +73,15 @@
 		<div><button class="emailCTA workImage desktopHidden">Email marketing</button></div>
 
 			<div class="leftColumn">
-				<h3>Lorem ipsum dolor sit amet, consectetur.</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, at, est, unde, labore amet corporis nam velit provident molestias ducimus aspernatur aut. Harum, dolores, veniam, similique iste quae voluptas quasi impedit ratione totam neque dolor labore aliquid numquam a quisquam fuga quidem consectetur dolorum officiis assumenda et ea hic odio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, temporibus id laudantium qui consequuntur iste.</p>
+				<h3>I speak CTA and subject lines.</h3>
+				<p>I&rsquo;ve spent the last year managing, analyzing, and optimizing targeted marketing channels for Logos Research Systems.</p>
+				<p>During this time, I&rsquo;ve rehabilitated underperforming lists,  </p>
+
+				<p>I&rsquo;ve grown to love email marketing: HTML/CSS template creation, list strategy and growth, A/B testing, automation, CAN-SPAM compliance, content development, and more.</p>
+				
+				
+				
+				
 
 
 			</div>
@@ -102,8 +108,8 @@
 		<div ng-class='{visible: current ==2, desktopHidden: current != 2}'>
 		<div><button class="emailCTA workImage desktopHidden">Copywriting</button></div>
 			<div class="leftColumn">
-				<h3>Lorem ipsum dolor sit.</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate velit eveniet voluptatibus vitae eligendi. Dignissimos, ex, soluta nihil deserunt fugit eveniet saepe quas facilis laborum asperiores corporis optio illum voluptas?</p>
+				<h3>Sometimes I write things.</h3>
+				<p></p>
 			</div>
 
 			<div class="rightColumn">
@@ -124,24 +130,23 @@
 		<div ng-class='{visible: current ==3, desktopHidden: current != 3}'>
 		<div><button class="emailCTA workImage desktopHidden">Education</button></div>
 			<div class="leftColumn">
-				<h3>I graduated from Western Washington University.</h3>
-				<p>At Western, I  </p>
+				<h3>I have a degree in marketing.</h3>
+				<p>During my four years at Western, I worked on IMC projects, created sustainability reports, analyzed firms and industries, and more. (Tambien aprendi un poco de espanol!) I graduated in 2014 with a 3.78 GPA.</p>
 			</div>
 
 			<div class="rightColumn">
 				<h3>Quick notes</h3>
 				<ul>
 					<li>BA, Business Administration (Marketing Concentration)</li>
+					<li>Spanish minor</li>
 					<li>Cum Laude</li>
 					<li>Western Washington University</li>
-					<li>Bellingham, WA</li>
-					
 					<li>Spring 2014</li>
 				</ul>
 			</div>
 			<div class="rightContainer last">
 				<a href="#connect" class="scroll">
-					<button class="primaryCTA">See a work sample</button>
+					<button class="primaryCTA">See my IMC project</button>
 				</a>
 			</div>
 		</div>
@@ -150,7 +155,7 @@
 	<!-- start code section -->
 
 	<div class="web clear padding100" ng-controller='webController'>
-		<h1>Code</h1>
+		<h1>CODE PROJECTS</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, numquam, minima, repellendus, ad inventore dolores rerum nesciunt animi aliquam ducimus nobis aspernatur magnam quae beatae quisquam repellat tenetur rem dignissimos.</p>
 		<div class="projectImages mobileHidden">
 				<ul>
@@ -163,16 +168,16 @@
 	<div class="visible" ng-class='{visible: current ==1, desktopHidden: current != 1}'>
 		<div><button class="emailCTA workImage desktopHidden">My site</button></div>
 		<div class="leftColumn">
-				<h3>Lorem ipsum dolor sit amet.</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate velit eveniet voluptatibus vitae eligendi. Dignissimos, ex, soluta nihil deserunt fugit.</p>
+				<h3>You&rsquo;re looking at it right now.</h3>
+				<p>I created this site to tell you about me. blah blah blah. Never forget the homie DD&mdash;he helped me bring this to life.</p>
 			</div>
 
 			<div class="rightColumn">
-				<h3>Summary of skills</h3>
+				<h3>Summary</h3>
 				<ul>
-					<li>Logos Bible Software</li>
-					<li>Bellingham, WA 98225</li>
-					<li>June 2013&ndash;present</li>
+					<li>Built from the ground up&mdash;no template</li>
+					<li>HTML, Sass, AngularJS, and JQuery</li>
+					<li>Spring 2014</li>
 				</ul>
 			</div>
 			<div class="rightContainer">
@@ -185,21 +190,24 @@
 		<div class="visible" ng-class='{visible: current ==2, desktopHidden: current != 2}'>
 			<div><button class="emailCTA workImage desktopHidden">SublimeScript</button></div>
 			<div class="leftColumn">
-				<h3>Lorem ipsum dolor sit amet.</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate velit eveniet voluptatibus vitae eligendi. Dignissimos, ex, soluta nihil deserunt fugit eveniet saepe quas facilis laborum asperiores corporis optio illum voluptas? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, iusto. Lorem ipsum dolor sit amet.</p>
+				<h3>Who doesn&rsquo;t want a robot to do all their boring work?</h3>
+				<p>Web copywriters and email marketers go back and forth between Word and Sublime Text all day, every day&mdash;and they usually waste a lot of time typing out special characters, otherwise marking-up text, and manually refreshing Chrome.</p>
+				<p>Together with some like-minded friends, I came up with a solution for this problem: SublimeScript. This friendly robot takes care of the boring, mindless work that no one likes doing.</p>
+
+</p>
 			</div>
 
 			<div class="rightColumn">
-				<h3>Summary of skills</h3>
+				<h3></h3>
 				<ul>
-					<li>Logos Bible Software</li>
-					<li>Bellingham, WA 98225</li>
-					<li>June 2013&ndash;present</li>
+					<li>Product vision and guidance</li>
+					<li>AutoHotkey, CSS, and HTML</li>
+					<li>Fall/Winter 2013</li>
 				</ul>
 			</div>
 			<div class="rightContainer">
 				<a href="#connect" class="scroll">
-					<button class="primaryCTA">See a work sample</button>
+					<button class="primaryCTA">Check it out!</button>
 				</a>
 			</div>
 		</div>
@@ -207,7 +215,7 @@
 		<div class="visible" ng-class='{visible: current ==3, desktopHidden: current != 3}'>
 			<div><button class="emailCTA workImage desktopHidden">Github</button></div>
 			<div class="leftColumn">
-				<h3>Lorem ipsum dolor sit amet.</h3>
+				<h3>See what else i've worked on</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate velit eveniet voluptatibus vitae eligendi. Dignissimos, ex, soluta nihil deserunt fugit eveniet saepe quas facilis laborum asperiores corporis optio illum voluptas?</p>
 			</div>
 
@@ -238,11 +246,11 @@
 		</div>
 			<div class="contact margin100" id="connect">
 				<div class="contactInfo">
-					<h1>Let&rsquo;s connect:</h1>
+					<h1>LET&rsquo;S CONNECT</h1>
 					<ul>
-						<!-- <li><div class="whiteCircleHover"><img src="images/gitHub.png" /></div></li> -->
-						<li><div class="whiteCircleHover"><img src="images/LinkedInOutline.png" /></div></li>
-						<li><div class="whiteCircleHover"><img src="images/twitterOutline.png" /></div></li>
+						<li> <div class="shareIcon gitHubSocial"></div></li>
+						<li><div class="shareIcon twitterSocial"></div></li>
+						<li><div class="shareIcon linkedinSocial"></div></li>
 					</ul>
 					<div class="centeredContainer">
 					<a href="#connect" class="scroll">

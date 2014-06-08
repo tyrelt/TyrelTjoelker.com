@@ -23,11 +23,10 @@
 		padding: 0;
 	}
 	ul {
-		border-left: 4px solid $yellow;
+		border-left: 3px solid $yellow;
 		padding-left: 15px;
 		list-style-type: disc;
 		list-style-position: inside;
-		line-height: 1.6em;
 	}
 }
 
@@ -102,8 +101,9 @@
 	background-color: white;
 	border: 0;
 	font-size: 24px;
-	font-weight: 300px;
-	border: 7px solid $darkGray;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	border: 3px solid $darkGray;
 	&:focus{
 		outline: 0;
 	}

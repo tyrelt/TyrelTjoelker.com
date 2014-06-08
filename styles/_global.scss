@@ -8,7 +8,7 @@ $transparent: rgba(255,255,255,0);
 $lightGray: rgb(230,230,230);
 $blue: rgb(0,50,60);
 $blueOpaque: rgba(0,50,60,0.8); // Must match $blue
-$lightBlue: rgb(0,100,150);
+$lightBlue: rgb(95,158,160);
 $purple: rgb(50,20,25);
 $red: rgb(95,15,15);
 $yellow: rgb(250,155,30);
@@ -29,37 +29,51 @@ body {
 
 // Headers and body text
 
+.header{
+	h1{
+		text-align: center;
+	}
+}
+
 h1 {
 	// margin: 35px 15px 35px 15px;
-	font-family: sans-serif;
-    text-align: center;
-	font-size: 46px;
-	font-weight: 700;
+	font-family: 'Fira Sans', sans-serif !important;  
+	text-align: light;
+	font-size: 4em;
+	font-weight: 300;
 	color: $darkGray;
 }
 
 h2{ 
 	// margin: 0 15px 25px 15px;
+	font-family: 'Fira Sans', sans-serif !important;
 	font-size: 2em;
-	font-weight: 600;
+	font-weight: 300;
 	color: $darkGray;
 }
 
 h3{ 
-	font-size: 1.3em;
+	font-size: 1.5em;
+	font-weight: 400;
 	margin: 0 0 10px 0;
 	color: $darkGray;
+	font-family: 'Fira Sans', sans-serif !important;
 }
-
 p{ 
+	font-family: 'Roboto', sans-serif !important;
+	font-weight: 300;
 	font-size: 1.2em;
 	color: $darkGray;
 	padding: 0;
 	margin-bottom: 20px;
+	line-height: 1.3em;
 }
 
 li { 
+	font-family: 'Roboto', sans-serif !important;
+	font-weight: 300;
 	font-size: 1.2em;
+	line-height: 1.3em;
 	color: $darkGray;
 }
 
@@ -120,17 +134,18 @@ li {
 
 #about{
 	position: relative;
-	p{
-		padding-left: 270px;
+	p, h1, a{
+		margin-left: 270px;
 	}
+	
 }
 .profile {
 	position: absolute;
-	top: 130px;
+	top: 90px;
 	height: 200px;
 	width: 200px;
 	border-radius:100px;
-	border: 4px solid $darkGray;
+	border: 3px solid $darkGray;
 
 }
 
@@ -160,10 +175,10 @@ li {
 	background-color: white;
 	border-radius: 50px;
 	color: $darkGray;
-	border: 4px solid $lightBlue;
+	border: 3px solid $lightBlue;
+	font-family: 'Roboto', sans-serif;
 	font-size: 1.3em;
-	font-weight: 300px;
-
+	font-weight: 300;
 	&:focus{
 		outline: 0;
 	}
@@ -178,7 +193,7 @@ li {
 	width: 320px;
 	height: 75px;
 	border-radius: 70px;
-	border: 4px solid $yellow;
+	border: 3px solid $yellow;
 	background-color: white;
 	&:hover{
 		background-color: $yellow;
@@ -191,7 +206,7 @@ li {
 	margin: 0 auto;
 	text-align: center;
 	display: block;
-	margin-top:20px;
+	margin-top: 42px;
 }
 
 .rightContainer {
