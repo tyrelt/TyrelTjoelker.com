@@ -7,7 +7,7 @@
 	text-align: left;
 	// border-right: 4px solid $yellow;
 	p{
-		margin: 0 5px 0 0;
+		margin-right: 5px;
 		padding: 0;
 	}
 	
@@ -62,36 +62,7 @@
 		background-color: $darkGray !important;
 	color: white !important;
 }
-.ttCurrent{
-	// background-image: url(../images/TT_TTsite_colorized.jpg) !important;
-	// border: 7px solid $purple !important;
-}
 
-.ssCurrent{
-	// background-image: url(../images/TT_SublimeScript_colorized.jpg) !important;
-	// border: 7px solid $purple !important;
-}
-
-.githubCurrent{
-	// background-image: url(../images/TT_Github_colorized.jpg) !important;
-	// border: 7px solid $purple !important;
-}
-.emailCurrent {
-	// background-image: url(../images/TT_strategy_colorized.jpg) !important;
-	// border: 7px solid $purple !important;
-}
-
-.copyCurrent {
-	// background-image: url(../images/TT_copy_colorized.jpg) !important;
-	// 	border: 7px solid $purple !important;
-
-}
-
-.educationCurrent{
-	// background-image: url(../images/TT_education_colorized.jpg) !important;
-	// border: 7px solid $purple !important;
-
-}
 
 .workImage{
 	width: 200px;
@@ -117,44 +88,3 @@
 }
 
 
-// .emailCTA{
-// 	background-image: url(../images/TT_strategy.jpg);
-// 	&:hover {
-// 		background-image: url(../images/TT_strategy_colorized.jpg);
-// 	}
-// }
-
-// .copyCTA{
-// 	background-image: url(../images/TT_copy.jpg);
-// 	&:hover {
-// 		background-image: url(../images/TT_copy_colorized.jpg);
-// 	}
-// }
-
-// .educationCTA{
-// 	background-image: url(../images/TT_education.jpg);
-// 	&:hover {
-// 		background-image: url(../images/TT_education_colorized.jpg);
-// 	}
-// }
-
-// .ttCTA{
-// 	background-image: url(../images/TT_TTsite.jpg);
-// 	&:hover {
-// 		background-image: url(../images/TT_TTsite_colorized.jpg);
-// 	}
-// }
-
-// .ssCTA{
-// 	background-image: url(../images/TT_SublimeScript.jpg);
-// 	&:hover {
-// 		background-image: url(../images/TT_SublimeScript_colorized.jpg);
-// 	}
-// }
-
-// .githubCTA{
-// 	background-image: url(../images/TT_Github.jpg);
-// 	&:hover {
-// 		background-image: url(../images/TT_Github_colorized.jpg);
-// 	}
-// }
