@@ -275,7 +275,7 @@
 	
 
 		<!-- Footer -->
-	<footer>
+		<footer>
 		<div>
 			<p>&copy; 2014 Tyrel Tjoelker. Special thanks to <a href="http://www.daviddavidson.io">David Davidson</a> and <a href="https://twitter.com/pambauthues">Pam Bauthues</a>.</p>
 		</div>
@@ -292,24 +292,20 @@
 			footerHeight = $('footer').height();
 			borderHeight = $('.borderBottom').height();
 			contactInfoHeight = $('.contactInfo').height();
-			heroContentHeight = $('.heroContent').height();
 			
 			// Calculate stuff
-
-
 			ctaHeight = totalHeight - footerHeight;
- 			imageHeight = totalHeight - (navHeight + borderHeight);
+			if (ctaHeight < minCtaHeight) {
+				ctaHeight = minCtaHeight;
+			}
+			imageHeight = totalHeight - (navHeight + borderHeight);
 			topPaddingHeight = imageHeight / 2.25;
 			ctaPaddingHeight = ((ctaHeight - contactInfoHeight) / 3);
-
-			if (heroContentHeight > imageHeight) {
-                heroHeight = imageHeight;
-            }
 			
 			// Apply heights
 			$('.headerBackground').css({"height": totalHeight})
 			$('.header').css({"height": imageHeight});
-			$('.heroContent').css({'padding-top': topPaddingHeight});
+			$('.header h1').css({"margin-top": topPaddingHeight});
 			$('#connect').css({'height': ctaHeight});
 			$('.contactInfo').css({'padding-top': ctaPaddingHeight});
 		}
