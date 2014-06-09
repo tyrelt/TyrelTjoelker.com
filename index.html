@@ -305,6 +305,7 @@
 
 			if (heroContentHeight > imageHeight) {
                 imageHeight = heroContentHeight;
+                totalHeight = heroContentHeight + navHeight; // Protects the nav
             }
             // Needs to follow the min height
             // Also, note that we subtract heroContent from image *b4* the division
