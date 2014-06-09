@@ -13,9 +13,14 @@ $purple: rgb(50,20,25);
 $red: rgb(95,15,15);
 $yellow: rgb(250,155,30);
 
-// Fonts
 
-
+a{
+    color: $yellow;
+    text-decoration: none;
+    &:hover {
+        cursor: pointer;
+    }
+}
 //Page styling
 
 body {
@@ -23,7 +28,6 @@ body {
 	background-color: white;
 	height: auto;
 	min-height: 100%;
-    font-family: sans-serif;
 }
 
 
@@ -37,7 +41,7 @@ body {
 
 h1 {
 	// margin: 35px 15px 35px 15px;
-	font-family: 'Fira Sans', sans-serif !important;  
+	font-family: 'Fira Sans', sans-serif;  
 	text-align: light;
 	font-size: 4em;
 	font-weight: 300;
@@ -46,7 +50,7 @@ h1 {
 
 h2{ 
 	// margin: 0 15px 25px 15px;
-	font-family: 'Fira Sans', sans-serif !important;
+	font-family: 'Fira Sans', sans-serif;
 	font-size: 2em;
 	font-weight: 300;
 	color: $darkGray;
@@ -57,10 +61,10 @@ h3{
 	font-weight: 400;
 	margin: 0 0 10px 0;
 	color: $darkGray;
-	font-family: 'Fira Sans', sans-serif !important;
+	font-family: 'Fira Sans', sans-serif;
 }
 p{ 
-	font-family: 'Roboto', sans-serif !important;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	font-size: 1.2em;
 	color: $darkGray;
@@ -70,14 +74,12 @@ p{
 }
 
 li { 
-	font-family: 'Roboto', sans-serif !important;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	font-size: 1.2em;
 	line-height: 1.3em;
 	color: $darkGray;
 }
-
-
 
 // Useful classes
 
@@ -124,14 +126,6 @@ li {
         font-size: 100px;
 	}
 }
-
-.twoColumn {
-	 -moz-column-count: 2;
-       -moz-column-gap: 20px;
-       -webkit-column-count: 2;
-       -webkit-column-gap: 20px;
-}
-
 #about{
 	position: relative;
 	p, h1, a{

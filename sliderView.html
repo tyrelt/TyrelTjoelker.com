@@ -1,23 +1,21 @@
 <div class="sliderWrapper">
-    <h1>KIND WORDS FROM COOL PEOPLE</h1>
+    <h1>KIND WORDS FROM GOOD PEOPLE</h1>
     <div class="bulletsWrapper">
         <div class="navBullets" ng-repeat='item in slides' ng-click='activate($index)' ng-class='{active: slides[$index].visible}'>
             &bull;
         </div>
     </div>
     <div class="slide" ng-repeat='item in slides' ng-show='item.visible'>
-        <h2>
-            {{item.name}}
-        </h2>
+        <p ng-bind-html-unsafe='item.testimonial'></p>
         <p>
-            {{item.content}}
+            <span>&mdash;{{item.signature}}</span>
         </p>
     </div>
     <!-- What about slides of differing heights? We work around it by absolute positioning the slides on top of a div with visibility: hidden; the div keeps the right gap open, and the slides cycle over it without bouncing content up and down. -->
     <div class="placeholder">
-        <h2>
+        <p>
             {{placeholder.h2}}
-        </h2>
+        <p>
         <p>
             {{placeholder.p}}
         </p>
