@@ -22,14 +22,14 @@
 	<script type="text/javascript" src="//use.typekit.net/cun3khp.js"></script>
 </head>
 <body>
-	<div class="headerBackground">
+	<div class="headerBackground" style="border: 1px solid red;">
 		<!-- header image -->
-		<div class="header">
-			<div class="heroContent">
+		<div class="header" style="border: 1px solid yellow;">
+			<div class="heroContent" style="border: 1px solid blue;">
 				<h1>TYREL TJOELKER</h1>
 			</div>
 		</div>
-	</div>
+	<!-- </div> -->
 		<!-- nav bar -->
 		<nav>
 			<div>
@@ -289,7 +289,7 @@
 	<script>
 		function setHeight() {
 			// Set minimums
-			minCtaHeight = 450;
+			// minCtaHeight = 450;
 			
 			// Measure stuff
 			totalHeight = $(window).height();
@@ -300,18 +300,25 @@
 			contactInfoHeight = $('.contactInfo').height();
 			
 			// Calculate stuff
+			// alert(navHeight);
 			ctaHeight = totalHeight - footerHeight;
-			if (ctaHeight < minCtaHeight) {
-				ctaHeight = minCtaHeight;
-			}
-			imageHeight = totalHeight - (navHeight + borderHeight);
-			topPaddingHeight = imageHeight / 2.25;
+ 			imageHeight = totalHeight - (navHeight + borderHeight);
+			// topPaddingHeight = imageHeight / 2.25;
+
 			ctaPaddingHeight = ((ctaHeight - contactInfoHeight) / 3);
-			
+
+			if (heroContentHeight > imageHeight) {
+                imageHeight = heroContentHeight;
+                totalHeight = heroContentHeight + navHeight; // Protects the nav
+            }
+            // Needs to follow the min height
+            // Also, note that we subtract heroContent from image *b4* the division
+            topPaddingHeight = (imageHeight - heroContentHeight) / 2.25;
+		
 			// Apply heights
 			$('.headerBackground').css({"height": totalHeight})
 			$('.header').css({"height": imageHeight});
-			$('.header h1').css({"margin-top": topPaddingHeight});
+			$('.heroContent').css({'margin-top': topPaddingHeight});
 			$('#connect').css({'height': ctaHeight});
 			$('.contactInfo').css({'padding-top': ctaPaddingHeight});
 		}
