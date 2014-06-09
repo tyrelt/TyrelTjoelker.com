@@ -22,10 +22,10 @@
 	<script type="text/javascript" src="//use.typekit.net/cun3khp.js"></script>
 </head>
 <body>
-	<div class="headerBackground" style="border: 1px solid red;">
+	<div class="headerBackground">
 		<!-- header image -->
-		<div class="header" style="border: 1px solid yellow;">
-			<div class="heroContent" style="border: 1px solid blue;">
+		<div class="header">
+			<div class="heroContent">
 				<h1>TYREL TJOELKER</h1>
 			</div>
 		</div>
@@ -49,7 +49,10 @@
 	
 		<h1>ABOUT ME</h1>
 		<img src="images/profile.jpg" class="profile mobileHidden"/>
-		<p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, architecto</em>, beatae, perspiciatis, laborum magni facere quod iste inventore expedita odio fugit natus ab eius dicta placeat sed excepturi tenetur dolor harum voluptatibus doloremque temporar unde esse repellendus saepe ipsa in voluptas dignissimos obcaecati quae eos corrupti nulla officiis temporibus incidunt.</p>
+		<p>I&rsquo;m a marketer from Bellingham, WA, who works on stuff like <a href="http://www.sublimescript.com">this</a> and <a href="http://www.logos.com">this</a>. Depending on how you look at it, I either have an intense fear of mediocrity, or an incredible drive to succeed. Either way, I&rsquo;m dedicated to learning new things, winning, solving problems in innovative ways, and bettering the lives of those around me.</p>
+		<p>I&rsquo;m always down for an adventure, and I enjoy lifehacking, watching soccer, exploring the outdoors, and traveling.</p>
+
+		<p><strong>Tackling new challenges is one of my favorite things. Let&rsquo;s get in touch.</strong> </p>
 		
 		
 			<a href="#connect" class="scroll">
@@ -63,9 +66,17 @@
 	<!-- Start three-column stuff -->
 	<div class="email padding100" id="projects" ng-controller='emailController'>
 		<h1>MARKETING PROJECTS</h1>
-		<p class="body">Marketing is kinda my thing.</p>
-		<p class="body">I&rsquo;m not a developer, though&mdash;I&rsquo;m just a marketer who loves code, and <strong>I want to help you tell your brand&rsquo;s story</strong> through your website.</p>
-		<p class="body">Check out some of marketing projects I&rsquo;ve worked on:</p>
+		<p class="body">If I had to pick a specialization, it would be marketing.</p>
+		<p class="body">Here are some reasons why I think the field is so cool:</p>
+		<ol style="list-style: decimal inside; margin-left: 20px;">
+			<li>Marketing connects people, sometimes in unexpected ways.</li>
+			<li>Marketing adds value to real life.</li>
+			<li>Marketing solves difficult problems.</li>
+			<li>Marketing influences everything from product development to corporate-level strategy.</li>
+			<li>Marketing may have a tarnished reputation, but it&rsquo;s being rebuilt by good people.</li>
+		</ol>
+		<p><strong>I want to help you delight your customers</strong>, and quality marketing is one way we&rsquo;ll do it. </p>
+		<p class="body">Check out some of the things I&rsquo;ve done:</p>
 		<div class="projectImages mobileHidden">
 				<ul>
 					<li><a href=""><button ng-class='{currentBackground: current == 1}' class="emailCTA workImage" ng-click='setCurrent(1)'>Email marketing</button></a></li>
@@ -111,8 +122,9 @@
 		<div ng-class='{visible: current ==2, desktopHidden: current != 2}'>
 		<div><button class="emailCTA workImage desktopHidden">Copywriting</button></div>
 			<div class="leftColumn">
-				<h3>Sometimes I write things.</h3>
-				<p></p>
+				<h3>I write to solve problems and spread ideas.</h3>
+				<p>Whether I&rsquo;m writing a promotional email, product copy, or social posts, I write with three things in mind: readability, benefits, and resonance. I believe words are beautiful, but more importantly, I know they&rsquo;re useful&mdash;when used correctly, they can prevent and solve just about any problem.</p>
+				<p>The right words connect people and spread ideas. I&rsquo;ll help you find them.</p>
 			</div>
 
 			<div class="rightColumn">
@@ -151,7 +163,7 @@
 			</div>
 			<div class="rightContainer last">		
 				<form method="get" action="tyrel-tjoelker_IMC.pdf">
-					<button type="submit" class="primaryCTA">See my IMC project!</button>
+					<button type="submit" class="primaryCTA">See my IMC project</button>
 				</form>
 			</div>
 		</div>
@@ -177,9 +189,9 @@
 		<div><button class="emailCTA workImage desktopHidden">My site</button></div>
 		<div class="leftColumn">
 				<h3>I built the site you&rsquo;re looking at right now.</h3>
-				<p>Let&rsquo;s be honest: I created this site to tell you a little bit about me. Along the way, however, I got to use some pretty nifty tools: Sass, AngularJS, Emmet, Git Bash, and more. (Oh, and one more&mdash;the trusty dry-erase board.)</p>
+				<p>Let&rsquo;s be honest: I created this site to tell you a little bit about me. Along the way, however, I got to use some pretty nifty tools&mdash;like Sass, AngularJS, Emmet, and Git Bash. (And my old friend, the trusty dry-erase board.)</p>
 			<!-- 	<p>Now&rsquo;s probably a good time to give a shout out to <a href="http://www.daviddavidson.io">David Davidson</a>&mdash;he helped me bring this site to life.</p> -->
-				<p>If you&rsquo;d like to check out the source code, head over to my GitHub profile. Feel free to fork, modify, and do whatever else you&rsquo;d like to it!</p>
+				<p>If you&rsquo;d like to check out the source code, head over to <a href="http://www.github.com/tyrelt">my GitHub profile</a>. Feel free to fork, modify, and do whatever else you&rsquo;d like to it.</p>
 			</div>
 
 			<div class="rightColumn">
@@ -211,7 +223,7 @@
 				<h3>Summary</h3>
 				<ul>
 					<li>Productivity tool</li>
-					<li>Product vision and guidance</li>
+					<li>Product vision</li>
 					<li>AutoHotkey, CSS, and HTML</li>
 					<li>Fall/Winter 2013</li>
 				</ul>
