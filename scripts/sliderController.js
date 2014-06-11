@@ -5,19 +5,19 @@ tyrelSite.controller('sliderController',
         $scope.slides = [
             {
                 testimonial: 'Tyrel&rsquo;s a hacker. I&rsquo;ve been lucky enough to work with him on multiple types of marketing projects, and he&rsquo;s come at them all from the same angle: maximize revenue, scalability, and reusability; minimize repeated effort and wasted time. That mindset makes him super efficient&mdash;<strong>he gets things done, and the things he does make money</strong>.<br><br>Tyrel&rsquo;s also a serious advocate for quality. He&rsquo;ll find and correct HTML bugs even when they render correctly, just because he likes doing things well. He&rsquo;ll aggressively solicit feedback on his marketing copy, because he knows that criticism is the fastest way to improve. All of this means extra effort on his part, but it&rsquo;s worth it, because <strong>Tyrel&rsquo;s work is never less than awesome</strong>. ',
-                signature: 'Marketing Communications Editor at Logos'
+                signature: 'Marketing communications editor at Logos'
             },
             {
                 testimonial: '[Tyrel] strategically assesses how every project he works on fits into the big picture, and then he drills down to the tiniest detail to ensure both quality and alignment with the core objective. This doesn’t slow him down in execution, however. <strong>He’ll find a way to take a project from idea to reality in efficient ways</strong>—always looking for even higher ROI. He also will buckle down and do work he may not enjoy if he sees that it benefits his team.',
-                signature: 'Targeted Marketing Lead at Logos'
+                signature: 'Targeted marketing lead at Logos'
             },
             {
                 testimonial: 'Tyrel is the epitome of a lifelong learner. He constantly seeks growth and knowledge&mdash;inside and outside his job.&nbsp;.&nbsp;.&nbsp;.&nbsp;Of anyone I&rsquo;ve ever worked with, <strong>Tyrel is among the best at asking the right questions</strong> and seeking feedback, not to mention taking feedback in the most gracious manner. He identifies areas in which he wants to grow and constantly seeks tangible opportunities to do so. Working with him is fun and easy, and I would highly recommend it if you get the chance.',
-                signature: 'Marketing Communications Editor at Logos'
+                signature: 'Marketing communications editor at Logos'
             },
             {
                 testimonial: 'Tyrel is a valuable asset to any team he&rsquo;s a part of. His ability to go outside the box, and search for new ways to optimize and create value, has opened up doors for new ideas.<br><br><strong>His ideas are full scope</strong>&mdash;from conception to execution&mdash;and he&rsquo;s always look for ways to make things run smoother. He&rsquo;s a marketing-metrics whiz, and he&rsquo;s constantly look for possibly learning opportunities.',
-                signature: 'Promotions Specialist at Logos'
+                signature: 'Promotions specialist at Logos'
             },
             
             {
