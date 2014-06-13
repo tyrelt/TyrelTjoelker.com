@@ -121,11 +121,18 @@ li {
 .header{
 	// height: 300px; // jQuery overrides this
 	overflow: hidden;
+	text-align: center;
 	h1{
 		color: white;
         font-size: 100px;
 	}
 }
+
+.heroContent {
+	display: inline-block;
+	// text-align: center;
+}
+
 #about{
 	position: relative;
 	p, h1, button{
