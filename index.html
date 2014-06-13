@@ -327,12 +327,18 @@
  			imageHeight = totalHeight - (navHeight + borderHeight);
 			// topPaddingHeight = imageHeight / 2.25;
 
-			ctaPaddingHeight = ((ctaHeight - contactInfoHeight) / 3);
+			// We use this number to set padding-top on .contactInfo
+			
 
 			if (heroContentHeight > imageHeight) {
                 imageHeight = heroContentHeight;
                 totalHeight = heroContentHeight + navHeight; // Protects the nav
             }
+
+            if (contactInfoHeight > ctaHeight) {
+            	ctaHeight = contactInfoHeight;
+            }
+            ctaPaddingHeight = ((ctaHeight - contactInfoHeight) / 2.25);
             // Needs to follow the min height
             // Also, note that we subtract heroContent from image *b4* the division
             topPaddingHeight = (imageHeight - heroContentHeight) / 2.25;
@@ -342,7 +348,7 @@
 			$('.header').css({"height": imageHeight});
 			$('.heroContent').css({'margin-top': topPaddingHeight});
 			$('#connect').css({'height': ctaHeight});
-			$('.contactInfo').css({'padding-top': ctaPaddingHeight});
+			$('.contactInfo').css({'margin-top': ctaPaddingHeight});
 		}
 		setHeight();
 		$(window).resize(function() {
