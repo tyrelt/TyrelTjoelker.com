@@ -35,7 +35,11 @@ body {
 
 .header{
 	h1{
-		text-align: center;
+		// text-align: center;
+	}
+	text-align: center;
+	.heroContent {
+		display: inline-block;
 	}
 }
 

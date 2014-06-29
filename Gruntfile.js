@@ -3,97 +3,81 @@ module.exports = function(grunt){
     require("matchdep").filterDev("grunt-*").forEach(grunt.loadNpmTasks);
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        connect: {
+        express: {
             all: {
                 options: {
                     port: 9000,
-                    hostname: "localhost",
-                    middleware: function(connect, options) {
-                        return [
-                            require('grunt-contrib-livereload/lib/utils').livereloadSnippet,
-                            connect.static(options.base)
-                        ];
-                    }
+                    hostname: 'localhost',
+                    livereload: true,
+                    bases: './'
                 }
             }
         },
         open: {
             all: {
-                path: 'http://localhost:<%= connect.all.options.port%>'
+                path: 'http://localhost:<%= express.all.options.port%>'
             }
         },
-        regarde: {
+        watch: {
             all: {
                 files: [
                     'index.html', 
-                    'styles/*.scss',
-                    //'controllers/*', 
-                    //'models/*', 
-                    //'views/*', 
-                    //'app.js'
+                    'styles/*.scss', 
+                    'controllers/*', 
+                    'models/*', 
+                    'views/**/*', 
+                    'app.js'
                 ],
                 tasks: [
-                    'sass',
-                    // 'jshint',
-                    // 'concat', 
-                    // 'uglify', 
-                    'cssmin', 
-                    'livereload'
-                ]
+                    'sass', 
+                    'jshint',
+                    'concat', 
+                    'uglify', 
+                    'cssmin'
+                ],
+                options: {
+                    livereload: true
+                }
             }
         },
         jshint: {
             files: ['app.js', 'models/*.js', 'controllers/*.js']
         },
         concat: {
-            models: {
-                src: [
-                    'models/*'
-                ],
-                dest: 'grunted/models.js'
-            },
-            controllers: {
-                src: [
-                    'controllers/*'
-                ],
-                dest: 'grunted/controllers.js'
+            all: {
+                src: ['app.js', 'models/*', 'controllers/*'],
+                dest: 'minified/scripts.js'
             }
         },
         uglify: {
-            models: {
+            all: {
                 files: {
-                    'grunted/models.js': ['grunted/models.js']
-                },
-            },
-            controllers: {
-                files: {
-                    'grunted/controllers.js': ['grunted/controllers.js']
-                },
+                    'minified/scripts.js': ['minified/scripts.js']
+                }
             }
         },
         cssmin: {
             build: {
-                src: 'styles/styles.css',
-                dest: 'styles/styles.css'
+                src: 'minified/styles.css',
+                dest: 'minified/styles.css'
             }
         },
         sass: {
             build: {
                 files: {
-                    'styles/styles.css': 'styles/styles.scss'
+                    'minified/styles.css': 'styles/styles.scss'
                 }
             }
         }
     });
 grunt.registerTask('default', [
-    'sass',
-    //'jshint',
-    //'concat', 
-    //'uglify', 
+    'sass', 
+    'jshint',
+    'concat', 
+    'uglify', 
     'cssmin', 
-    'livereload-start', 
-    'connect', 
+    'express',
     'open', 
-    'regarde'
+    'watch'
     ]);
 };
