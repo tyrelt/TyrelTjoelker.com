@@ -22,6 +22,7 @@ module.exports = function(grunt){
             all: {
                 files: [
                     'index.html', 
+                    'homepage.html',
                     'styles/*.scss', 
                     'controllers/*', 
                     'models/*', 
