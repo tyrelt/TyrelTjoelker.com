@@ -1,0 +1,50 @@
+#homepageImage {
+	background: url(../images/FPO2.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.homepageContent {
+	max-width: 45%;
+	height: 100%;
+	float: right;
+	margin-right: 10%;
+	margin-bottom: 100px;
+	h1 { 
+		margin-top: 115px;
+	}
+}
+
+.homepageBanner {
+	width: 100%;
+	background-color: $grayOpaque;
+	text-align: center;
+	.circle { 
+		display: inline-block;
+		margin: 15px;
+	}
+	p {
+		line-height: 60px;
+	}
+}
+
+.topIcons {
+	text-align: right;
+	
+	ul{
+		margin-top:15px;
+		margin-right: 20px;
+		li {
+		display: inline-block;
+	}
+	}
+}
+
+.smallShareIcon {
+    display: inline-block;
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px;
+}

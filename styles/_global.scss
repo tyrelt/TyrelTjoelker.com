@@ -86,6 +86,16 @@ li {
 }
 
 // Useful classes
+.white { 
+color: white;
+}
+
+.circle {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px; 
+	background-color: $red;	
+}
 
 .marginBottom20{
 	margin-bottom: 20px;
@@ -97,6 +107,10 @@ li {
 
 .marginBottom50{
 	margin-bottom: 50px;
+}
+
+.marginRight20 { 
+	margin-right: 20px;
 }
 
 .clear{ 
@@ -187,17 +201,21 @@ li {
 	}
 }
 
-.wide{
-	width: 320px;
-	height: 75px;
-	border-radius: 70px;
+.yellow{
 	border: 3px solid $yellow;
 	background-color: white;
 	&:hover{
 		background-color: $yellow;
 	}
-
 }
+
+
+.wide{
+	width: 320px;
+	height: 75px;
+	border-radius: 70px;
+}
+
 
 
 .centeredContainer {
