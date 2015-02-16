@@ -47,7 +47,7 @@ h1 {
 	// margin: 35px 15px 35px 15px;
 	font-family: 'Fira Sans', sans-serif;  
 	text-align: light;
-	font-size: 4em;
+	font-size: 2.5em;
 	font-weight: 300;
 	color: $darkGray;
 }
@@ -133,7 +133,7 @@ color: white;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-     overflow: hidden;
+     // overflow: hidden;
 
 }
 .header{
@@ -141,7 +141,7 @@ color: white;
 	overflow: hidden;
 	h1{
 		color: white;
-        font-size: 100px;
+        font-size: 3em;
 	}
 }
 #about{

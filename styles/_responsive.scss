@@ -11,6 +11,14 @@
             }
         }
     }
+    h1{
+        font-size: 4em;
+    }
+    .header {
+        h1 {
+            font-size: 100px;
+        }
+    }
 }
 
 @media (min-width: 750px) {
